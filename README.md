@@ -1,4 +1,4 @@
-# Wallets list
+# TON Connect Wallets
 
 This repository contains the list of wallets that support TON Connect.
 
