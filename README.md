@@ -20,7 +20,7 @@ Each entry has the following format (subject to change):
 }
 ```
 
-#### Descritpion
+#### Description
 - `name`: name of your wallet. Will be displayed in the dapp.
 - `image`: icon of your wallet. Will be displayed in the dapp.
 - `tondns`: (optional) will be used in the protocol later.
