@@ -25,7 +25,7 @@ Each entry has the following format (subject to change):
 - `image`: icon of your wallet. Will be displayed in the dapp.
 - `tondns`: (optional) will be used in the protocol later.
 - `about_url`: info or landing page of your wallet. May be useful for TON newcomers.
-- `universal_url`: (optional) base part of your wallet universal url. [Larn more](https://github.com/ton-connect/docs/blob/main/bridge.md#universal-link)
+- `universal_url`: (optional) base part of your wallet universal url. Your link should support [Ton Connect parameters](https://github.com/ton-connect/docs/blob/main/bridge.md#universal-link)
 - `bridge_url`: (optional) url of your wallet's implementation of the [HTTP bridge](https://github.com/ton-connect/docs/blob/main/bridge.md#http-bridge).
 - `js_bridge_key`: (optional) if your wallet handles JS Bridge connection, specify js key of your bridge object for `window` object. [Learn more](https://github.com/ton-connect/docs/blob/main/bridge.md#js-bridge)
 
