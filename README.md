@@ -23,7 +23,7 @@ Each entry has the following format (subject to change):
 #### Descritpion
 - `name`: name of your wallet. Will be displayed in the dapp.
 - `image`: icon of your wallet. Will be displayed in the dapp.
-- `tondns`: (optionoal) will be used in the protocol later.
+- `tondns`: (optional) will be used in the protocol later.
 - `about_url`: info or landing page of your wallet. May be useful for TON newcommers.
 - `universal_url`: (optional) base part of your wallet universal url. [Larn more](https://github.com/ton-connect/docs/blob/main/bridge.md#universal-link)
 - `bidge_url`: (optional) url of your wallet's implementation of the TonConnect HTTP bridge. [Learn more](https://github.com/ton-connect/docs/blob/main/bridge.md#http-bridge)
