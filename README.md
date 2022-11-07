@@ -30,7 +30,7 @@ Each entry has the following format (subject to change):
 - `js_bridge_key`: (optional) if your wallet handles JS Bridge connection, specify js key of your bridge object for `window` object. [Learn more](https://github.com/ton-connect/docs/blob/main/bridge.md#js-bridge)
 
 If your wallet supports HTTP Bridge, you should specify `universal_url` and `bridge_url`. 
-If your wallet supports JS Bridge, you have to specify `js_bridge_key`.
+If your wallet provides the JS bridge (e.g. as a browser extension), you should specify the `js_bridge_key`.
 If your wallet supports both bridges, you have to specify `universal_url`, `bidge_url` and `js_bridge_key`.
 
 ### How do I add my wallet?
