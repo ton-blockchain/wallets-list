@@ -27,7 +27,7 @@ Each entry has the following format (subject to change):
 - `about_url`: info or landing page of your wallet. May be useful for TON newcomers.
 - `universal_url`: (optional) base part of your wallet universal url. Your link should support [Ton Connect parameters](https://github.com/ton-connect/docs/blob/main/bridge.md#universal-link)
 - `bridge_url`: (optional) url of your wallet's implementation of the [HTTP bridge](https://github.com/ton-connect/docs/blob/main/bridge.md#http-bridge).
-- `js_bridge_key`: (optional) if your wallet handles JS Bridge connection, specify js key of your bridge object for `window` object. [Learn more](https://github.com/ton-connect/docs/blob/main/bridge.md#js-bridge)
+- `js_bridge_key`: (optional) if your wallet handles [JS Bridge](https://github.com/ton-connect/docs/blob/main/bridge.md#js-bridge) connection, specify the binding for your bridge object accessible through `window`. Example: the key `"tonkeeper"` means the bridge can be accessed as `window.tonkeeper`.
 
 If your wallet supports HTTP Bridge, you should specify `universal_url` and `bridge_url`. 
 If your wallet provides the JS bridge (e.g. as a browser extension), you should specify the `js_bridge_key`.
