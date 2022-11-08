@@ -5,7 +5,7 @@
     "tondns": "tonkeeper.ton",
     "about_url": "https://tonkeeper.com",
     "universal_url": "https://app.tonkeeper.com",
-    "bridge_url": "https://bridge.tonapi.io/bridge/",
+    "bridge_url": "https://bridge.tonapi.io/bridge",
     "js_bridge_key": "tonkeeper"
   }
 ]
