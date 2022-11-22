@@ -11,7 +11,7 @@ Each entry has the following format (subject to change):
 ```json
 {
   "name": "Tonkeeper",
-  "image": "https://tonkeeper.com/tonconnect-icon.png"
+  "image": "https://tonkeeper.com/assets/tonconnect-icon.png",
   "tondns":  "tonkeeper.ton",
   "about_url": "https://tonkeeper.com",
   "universal_url": "https://app.tonkeeper.com/ton-connect",
