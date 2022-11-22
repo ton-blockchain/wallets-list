@@ -14,7 +14,7 @@ Each entry has the following format (subject to change):
   "image": "https://tonkeeper.com/tonconnect-icon.png"
   "tondns":  "tonkeeper.ton",
   "about_url": "https://tonkeeper.com",
-  "universal_url": "https://app.tonkeeper.com",
+  "universal_url": "https://app.tonkeeper.com/ton-connect",
   "bridge_url": "https://bridge.tonkeeper.com",
   "js_bridge_key": "tonkeeper"
 }
