@@ -15,7 +15,7 @@ Each entry has the following format (subject to change):
   "tondns":  "tonkeeper.ton",
   "about_url": "https://tonkeeper.com",
   "universal_url": "https://app.tonkeeper.com/ton-connect",
-  "bridge_url": "https://bridge.tonkeeper.com",
+  "bridge_url": "https://bridge.tonapi.io/bridge",
   "js_bridge_key": "tonkeeper"
 }
 ```
