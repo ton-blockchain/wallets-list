@@ -7,5 +7,11 @@
     "universal_url": "https://app.tonkeeper.com/ton-connect",
     "bridge_url": "https://bridge.tonapi.io/bridge",
     "js_bridge_key": "tonkeeper"
+  },
+  {
+    "name": "OpenMask",
+    "image": "https://www.openmask.app/tonmask-logo.svg",
+    "about_url": "https://www.openmask.app/",
+    "js_bridge_key": "openmask"
   }
 ]
