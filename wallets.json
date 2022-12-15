@@ -7,5 +7,11 @@
     "universal_url": "https://app.tonkeeper.com/ton-connect",
     "bridge_url": "https://bridge.tonapi.io/bridge",
     "js_bridge_key": "tonkeeper"
+  },
+  {
+    "name": "SafePal",
+    "image": "https://s.pvcliping.com/web/public_image/SafePal_x288.png",
+    "about_url": "https://www.safepal.com/",
+    "js_bridge_key": "safepal_ton"
   }
 ]
