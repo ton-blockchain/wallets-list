@@ -23,7 +23,7 @@ Each entry has the following format (subject to change):
      },
      {
         "type": "js",
-        "key": "tonkeeper", // window.tonkeeper
+        "key": "tonkeeper",
      }
   ],
 }
