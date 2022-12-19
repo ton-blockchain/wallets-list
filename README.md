@@ -15,12 +15,17 @@ Each entry has the following format (subject to change):
   "tondns":  "tonkeeper.ton",
   "about_url": "https://tonkeeper.com",
   "universal_url": "https://app.tonkeeper.com/ton-connect",
-  "bridge": { 
-      "sse_url": "https://bridge.tonapi.io/bridge",
-  },
-  "js_bridge": { 
-      "key": "tonkeeper",
-  }
+  "url_scheme": "tonkeeper",
+  "bridge": [ 
+     {
+        "type": "sse",
+        "url": "https://bridge.tonapi.io/bridge",
+     },
+     {
+        "type": "js",
+        "key": "tonkeeper", // window.tonkeeper
+     }
+  ],
 }
 ```
 
@@ -30,12 +35,14 @@ Each entry has the following format (subject to change):
 - `tondns`: (optional) will be used in the protocol later.
 - `about_url`: info or landing page of your wallet. May be useful for TON newcomers.
 - `universal_url`: (optional) base part of your wallet universal url. Your link should support [Ton Connect parameters](https://github.com/ton-connect/docs/blob/main/bridge.md#universal-link)
-- `bridge.sse_url`: (optional) url of your wallet's implementation of the [HTTP bridge](https://github.com/ton-connect/docs/blob/main/bridge.md#http-bridge).
-- `js_bridge.key`: (optional) if your wallet handles [JS Bridge](https://github.com/ton-connect/docs/blob/main/bridge.md#js-bridge) connection, specify the binding for your bridge object accessible through `window`. Example: the key `"tonkeeper"` means the bridge can be accessed as `window.tonkeeper`.
+- `url_scheme`: (optional) custom URL scheme to direct user to the wallet app on the same device (without resolving through browser)
+- `bridge`: options for connectivity between the app and the wallet
+    - `type="sse"`: specify the `url` of your wallet's implementation of the [HTTP bridge](https://github.com/ton-connect/docs/blob/main/bridge.md#http-bridge).
+    - `type="jsapi"`: specify the `key` through which your wallet handles [JS Bridge](https://github.com/ton-connect/docs/blob/main/bridge.md#js-bridge) connection, specify the binding for your bridge object accessible through `window`. Example: the key `"tonkeeper"` means the bridge can be accessed as `window.tonkeeper`.
 
-If your wallet supports HTTP Bridge, you should specify `universal_url` and `bridge_url`. 
-If your wallet provides the JS bridge (e.g. as a browser extension), you should specify the `js_bridge_key`.
-If your wallet supports both bridges, you have to specify `universal_url`, `bridge_url` and `js_bridge_key`.
+If your wallet supports HTTP Bridge, you should specify `universal_url` and `bridge.type="sse"`. 
+If your wallet provides the JS bridge (e.g. as a browser extension), you should specify the `bridge.type="js"`.
+If your wallet supports both bridges, you have to specify `universal_url` and both `bridge.type="sse"` and `bridge.type="js"`.
 
 ### How do I add my wallet?
 
