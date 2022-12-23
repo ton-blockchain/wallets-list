@@ -15,7 +15,6 @@ Each entry has the following format (subject to change):
   "tondns":  "tonkeeper.ton",
   "about_url": "https://tonkeeper.com",
   "universal_url": "https://app.tonkeeper.com/ton-connect",
-  "url_scheme": "tonkeeper",
   "bridge": [ 
      {
         "type": "sse",
