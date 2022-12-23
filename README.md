@@ -18,11 +18,11 @@ Each entry has the following format (subject to change):
   "bridge": [ 
      {
         "type": "sse",
-        "url": "https://bridge.tonapi.io/bridge",
+        "url": "https://bridge.tonapi.io/bridge"
      },
      {
         "type": "js",
-        "key": "tonkeeper",
+        "key": "tonkeeper"
      }
   ],
 }
