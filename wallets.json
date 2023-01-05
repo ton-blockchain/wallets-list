@@ -18,7 +18,7 @@
   },
   {
     "name": "OpenMask",
-    "image": "https://www.openmask.app/tonmask-logo.svg",
+    "image": "https://raw.githubusercontent.com/OpenProduct/openmask-extension/main/public/openmask-logo-288.png",
     "about_url": "https://www.openmask.app/",
     "bridge": [
       {
