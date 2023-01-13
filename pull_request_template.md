@@ -8,8 +8,8 @@
 - [ ] HTTP bridge as a desctop wallet app for [Windows](<link>), [macOS](<link>), ... .
 
 ## Supported features
-- [ ] ton_proof
-- [x] SendTransaction
+- [ ] [ton_proof](https://github.com/ton-connect/docs/blob/main/requests-responses.md#address-proof-signature-ton_proof)
+- [x] [SendTransaction](https://github.com/ton-connect/docs/blob/main/requests-responses.md#methods)
 
 
 ## Tests
