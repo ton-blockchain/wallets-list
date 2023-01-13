@@ -5,7 +5,7 @@
 - [ ] JS bridge for the in-wallet browser for [iOS](<appstore link>) and [Android](<google play link>).
 - [ ] JS bridge for in-wallet browser for [Windows](<link>), [macOS](<link>), ... .
 - [x] HTTP bridge as a mobile wallet app for [iOS](<appstore link>) and [Android](<google play link>).
-- [ ] HTTP bridge as a desctop wallet app for [windows](<link>), [mac](<link>), ... .
+- [ ] HTTP bridge as a desctop wallet app for [Windows](<link>), [macOS](<link>), ... .
 
 ## Supported features
 - [ ] ton_proof
