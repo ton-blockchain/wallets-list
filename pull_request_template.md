@@ -4,7 +4,7 @@
 - [x] JS bridge as a browser extention for [Google Chrome](<chrome store url>), ..., browsers.
 - [ ] JS bridge for the in-wallet browser for [iOS](<appstore link>) and [Android](<google play link>).
 - [ ] JS bridge for in-wallet browser for [Windows](<link>), [macOS](<link>), ... .
-- [x] HTTP bridge as a mobile wallet app for [ios](<appstore link>) and [android](<google play link>).
+- [x] HTTP bridge as a mobile wallet app for [iOS](<appstore link>) and [Android](<google play link>).
 - [ ] HTTP bridge as a desctop wallet app for [windows](<link>), [mac](<link>), ... .
 
 ## Supported features
