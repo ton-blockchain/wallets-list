@@ -16,4 +16,7 @@
 [a demo dapp with integrated wallet](link)
 
 ## Integrator contacts
-telegram/discord/email/...
+* telegram
+* email
+* discord
+* ...
