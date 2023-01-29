@@ -17,6 +17,22 @@
     ]
   },
   {
+    "name": "TonSafe",
+    "image": "https://app.tonsafe.net/images/tonsafe-prime-300x300.png",
+    "about_url": "https://tonsafe.net/about",
+    "universal_url": "https://app.tonsafe.net/ton-connect",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://bridge.tonapi.io/bridge"
+      },
+      {
+        "type": "js",
+        "key": "tonsafe"
+      }
+    ]
+  },
+  {
     "name": "OpenMask",
     "image": "https://raw.githubusercontent.com/OpenProduct/openmask-extension/main/public/openmask-logo-288.png",
     "about_url": "https://www.openmask.app/",
