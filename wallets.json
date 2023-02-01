@@ -25,10 +25,6 @@
       {
         "type": "sse",
         "url": "https://bridge.tonapi.io/bridge"
-      },
-      {
-        "type": "js",
-        "key": "tonsafe"
       }
     ]
   },
