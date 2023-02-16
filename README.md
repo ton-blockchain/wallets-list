@@ -46,7 +46,10 @@ If your wallet supports both bridges, you have to specify `universal_url` and bo
 
 Submit a [pull request](https://github.com/ton-connect/wallets-list/pulls) that modifies the list.
 
+Note, that you should add your wallet **to the end of the list**.
+
 We will review correctness of the info (obviously we want this info to be provided by the wallet’s developer) and merge it promptly.
+This process may take some time.
 
 ### What is the policy?
 
