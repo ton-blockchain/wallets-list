@@ -37,5 +37,17 @@
         "key": "mytonwallet"
       }
     ]
+  },
+  {
+    "name": "TonSafe",
+    "image": "https://app.tonsafe.net/images/tonsafe-prime-300x300.png",
+    "about_url": "https://tonsafe.net/about",
+    "universal_url": "https://app.tonsafe.net/ton-connect",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://bridge.tonapi.io/bridge"
+      }
+    ]
   }
 ]
