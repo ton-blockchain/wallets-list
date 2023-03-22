@@ -1,0 +1,46 @@
+name: Check wallets list
+
+on:
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Read wallets.json
+        run: |
+          content=cat ./wallets.json
+          content="${content//'%'/'  '}"
+          content="${content//$'\n'/'  '}"
+          content="${content//$'\r'/'%0D'}"
+          echo "WALLETS_LIST=$content" >> $GITHUB_ENV
+
+      - name: Check out tonconnect/sdk
+        uses: actions/checkout@v3
+        with:
+          repository: ton-connect/sdk
+
+      - name: Read .nvmrc
+        run: echo "NVMRC=$(cat .nvmrc)" >> $GITHUB_ENV
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '${{ env.NVMRC }}'
+
+      - name: Set up dependencies
+        run: npm ci
+
+      - name: Build tonconnect/protocol
+        shell: bash
+        run: npx nx run protocol:build
+
+      - name: Test sdk with new wallets list
+        shell: bash
+        run: |
+          cd packages/sdk
+          VITE_WALLETS_LIST='${{ env.WALLETS_LIST }}' npm run test
