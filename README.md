@@ -33,13 +33,15 @@ Each entry has the following format (subject to change):
 - `image`: url to the icon of your wallet. Will be displayed in the dapp. Resolution 288×288px. On non-transparent background, without rounded corners. PNG format.
 - `tondns`: (optional) will be used in the protocol later.
 - `about_url`: info or landing page of your wallet. May be useful for TON newcomers.
-- `universal_url`: (optional) base part of your wallet universal url. Your link should support [Ton Connect parameters](https://github.com/ton-connect/docs/blob/main/bridge.md#universal-link)
+- `universal_url`: (strictly required for `sse` bridges, optional otherwise) base part of your wallet universal url. Your link should support [Ton Connect parameters](https://github.com/ton-connect/docs/blob/main/bridge.md#universal-link)
 - `bridge`: options for connectivity between the app and the wallet
     - `type="sse"`: specify the `url` of your wallet's implementation of the [HTTP bridge](https://github.com/ton-connect/docs/blob/main/bridge.md#http-bridge).
     - `type="js"`: specify the `key` through which your wallet handles [JS Bridge](https://github.com/ton-connect/docs/blob/main/bridge.md#js-bridge) connection, specify the binding for your bridge object accessible through `window`. Example: the key `"tonkeeper"` means the bridge can be accessed as `window.tonkeeper`.
 
-If your wallet supports HTTP Bridge, you should specify `universal_url` and `bridge.type="sse"`. 
+If your wallet supports HTTP Bridge, you should specify `universal_url` and `bridge.type="sse"`.
+
 If your wallet provides the JS bridge (e.g. as a browser extension), you should specify the `bridge.type="js"`.
+
 If your wallet supports both bridges, you have to specify `universal_url` and both `bridge.type="sse"` and `bridge.type="js"`.
 
 ### How do I add my wallet?
