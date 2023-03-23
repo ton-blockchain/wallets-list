@@ -37,16 +37,5 @@
         "key": "mytonwallet"
       }
     ]
-  },
-  {
-    "name": "TEST_CI_WALLET",
-    "image": "TEST_CI_WALLET",
-    "about_url": "TEST_CI_WALLET",
-    "bridge": [
-      {
-        "type": "js",
-        "key": "TEST_CI_WALLET"
-      }
-    ]
   }
 ]
