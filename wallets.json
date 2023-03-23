@@ -37,5 +37,21 @@
         "key": "mytonwallet"
       }
     ]
+  },
+  {
+    "name": "Tonhub",
+    "image": "https://tonhub.com/tonconnect_logo.png",
+    "about_url": "https://tonhub.com",
+    "universal_url": "https://tonhub.com/ton-connect",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "tonhub"
+      },
+      {
+        "type": "sse",
+        "url": "https://connect.tonhubapi.com/tonconnect"
+      }
+    ]
   }
 ]
