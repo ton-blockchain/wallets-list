@@ -13,7 +13,7 @@ jobs:
 
       - name: Read wallets.json
         run: |
-          content=cat ./wallets.json
+          content=`cat ./wallets.json`
           content="${content//'%'/'  '}"
           content="${content//$'\n'/'  '}"
           content="${content//$'\r'/'%0D'}"
