@@ -39,17 +39,18 @@
     ]
   },
   {
-    "name": "TEST_CI_WALLET",
-    "image": "TEST_CI_WALLET",
-    "about_url": "TEST_CI_WALLET",
+    "name": "Tonhub",
+    "image": "https://tonhub.com/tonconnect_logo.png",
+    "about_url": "https://tonhub.com",
+    "universal_url": "https://tonhub.com/ton-connect",
     "bridge": [
       {
         "type": "js",
-        "key": "TEST_CI_WALLET"
+        "key": "tonhub"
       },
       {
         "type": "sse",
-        "url": "TEST_CI_WALLET"
+        "url": "https://connect.tonhubapi.com/tonconnect"
       }
     ]
   }
