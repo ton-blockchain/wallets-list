@@ -53,5 +53,17 @@
         "url": "https://connect.tonhubapi.com/tonconnect"
       }
     ]
+  },
+  {
+    "name": "DeWallet",
+    "image": "https://delabwallet.com/logo_black.png",
+    "about_url": "https://delabwallet.com",
+    "universal_url": "https://delabwallet.com",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "dewallet"
+      }
+    ]
   }
 ]
