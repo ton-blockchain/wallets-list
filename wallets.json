@@ -57,7 +57,7 @@
   {
     "name": "DeWallet",
     "image": "https://delabwallet.com/logo_black.png",
-    "about_url": "https://delabwallet.com",
+    "about_url": "https://delabwallet.com/about",
     "universal_url": "https://delabwallet.com",
     "bridge": [
       {
@@ -66,5 +66,4 @@
       }
     ]
   }
-
 ]
