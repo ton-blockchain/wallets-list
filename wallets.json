@@ -64,5 +64,16 @@
         "key": "tonflow"
       }
     ]
+  },
+  {
+    "name": "DeWallet",
+    "image": "https://app.delabwallet.com/logo_black.png",
+    "about_url": "https://delabwallet.com",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "dewallet"
+      }
+    ]
   }
 ]
