@@ -55,6 +55,28 @@
     ]
   },
   {
+    "name": "TonFlow",
+    "image": "https://tonflow.net/assets/images/tonflow_ico_192.png",
+    "about_url": "https://tonflow.net",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "tonflow"
+      }
+    ]
+  },
+  {
+    "name": "DeWallet",
+    "image": "https://app.delabwallet.com/logo_black.png",
+    "about_url": "https://delabwallet.com",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "dewallet"
+      }
+    ]
+  },
+  {
     "name": "XTONWallet",
     "image": "https://xtonwallet.com/assets/img/icon-256-back.png",
     "about_url": "https://xtonwallet.com",
