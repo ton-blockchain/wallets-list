@@ -31,10 +31,15 @@
     "name": "MyTonWallet",
     "image": "https://mytonwallet.io/icon-256.png",
     "about_url": "https://mytonwallet.io",
+    "universal_url": "https://connect.mytonwallet.org",
     "bridge": [
       {
         "type": "js",
         "key": "mytonwallet"
+      },
+      {
+        "type": "sse",
+        "url": "https://tonconnectbridge.mytonwallet.org/bridge/"
       }
     ]
   },
