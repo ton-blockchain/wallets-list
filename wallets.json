@@ -102,5 +102,16 @@
         "key": "tonwallet"
       }
     ]
+  },
+  {
+    "name": "Tonic Wallet",
+    "image": "https://tonicwallet.s3.ap-northeast-2.amazonaws.com/tonicwallet.png",
+    "about_url": "https://www.tonicwallet.io/",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "tonic"
+      }
+    ]
   }
 ]
