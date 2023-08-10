@@ -14,7 +14,8 @@
         "type": "js",
         "key": "tonkeeper"
       }
-    ]
+    ],
+    "platforms": ["ios", "android", "chrome", "firefox"]
   },
   {
     "name": "OpenMask",
@@ -25,7 +26,8 @@
         "type": "js",
         "key": "openmask"
       }
-    ]
+    ],
+    "platforms": ["chrome"]
   },
   {
     "name": "MyTonWallet",
@@ -41,7 +43,8 @@
         "type": "sse",
         "url": "https://tonconnectbridge.mytonwallet.org/bridge/"
       }
-    ]
+    ],
+    "platforms": ["chrome", "windows", "macos", "linux"]
   },
   {
     "name": "Tonhub",
@@ -57,7 +60,8 @@
         "type": "sse",
         "url": "https://connect.tonhubapi.com/tonconnect"
       }
-    ]
+    ],
+    "platforms": ["ios", "android"]
   },
   {
     "name": "TonFlow",
@@ -68,7 +72,8 @@
         "type": "js",
         "key": "tonflow"
       }
-    ]
+    ],
+    "platforms": ["chrome"]
   },
   {
     "name": "DeWallet",
@@ -79,7 +84,8 @@
         "type": "js",
         "key": "dewallet"
       }
-    ]
+    ],
+    "platforms": ["chrome"]
   },
   {
     "name": "XTONWallet",
@@ -90,7 +96,8 @@
         "type": "js",
         "key": "xtonwallet"
       }
-    ]
+    ],
+    "platforms": ["chrome", "firefox"]
   },
   {
     "name": "TON Wallet",
@@ -101,6 +108,7 @@
         "type": "js",
         "key": "tonwallet"
       }
-    ]
+    ],
+    "platforms": ["chrome"]
   }
 ]
