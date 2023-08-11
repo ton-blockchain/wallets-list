@@ -25,6 +25,7 @@ Each entry has the following format (subject to change):
         "key": "tonkeeper"
      }
   ],
+  "platforms": ["ios", "android", "chrome", "firefox", "safari", "windows", "macos", "linux"]
 }
 ```
 
@@ -37,6 +38,7 @@ Each entry has the following format (subject to change):
 - `bridge`: options for connectivity between the app and the wallet
     - `type="sse"`: specify the `url` of your wallet's implementation of the [HTTP bridge](https://github.com/ton-connect/docs/blob/main/bridge.md#http-bridge).
     - `type="js"`: specify the `key` through which your wallet handles [JS Bridge](https://github.com/ton-connect/docs/blob/main/bridge.md#js-bridge) connection, specify the binding for your bridge object accessible through `window`. Example: the key `"tonkeeper"` means the bridge can be accessed as `window.tonkeeper`.
+- `platforms`: list of platforms on which your wallet works: mobile app "ios", "android"; desktop app "windows", "macos", "linux"; browser extension "chrome", "firefox", "safari".
 
 If your wallet supports HTTP Bridge, you should specify `universal_url` and `bridge.type="sse"`.
 
