@@ -1,6 +1,7 @@
 [
   {
     "name": "Tonkeeper",
+    "app_name": "tonkeeper",
     "image": "https://tonkeeper.com/assets/tonconnect-icon.png",
     "tondns": "tonkeeper.ton",
     "about_url": "https://tonkeeper.com",
@@ -19,6 +20,7 @@
   },
   {
     "name": "OpenMask",
+    "app_name": "OpenMask",
     "image": "https://raw.githubusercontent.com/OpenProduct/openmask-extension/main/public/openmask-logo-288.png",
     "about_url": "https://www.openmask.app/",
     "bridge": [
@@ -31,6 +33,7 @@
   },
   {
     "name": "MyTonWallet",
+    "app_name": "MyTonWallet",
     "image": "https://mytonwallet.io/icon-256.png",
     "about_url": "https://mytonwallet.io",
     "universal_url": "https://connect.mytonwallet.org",
@@ -48,6 +51,7 @@
   },
   {
     "name": "Tonhub",
+    "app_name": "Tonhub",
     "image": "https://tonhub.com/tonconnect_logo.png",
     "about_url": "https://tonhub.com",
     "universal_url": "https://tonhub.com/ton-connect",
@@ -65,6 +69,7 @@
   },
   {
     "name": "TonFlow",
+    "app_name": "TonFlow",
     "image": "https://tonflow.net/assets/images/tonflow_ico_192.png",
     "about_url": "https://tonflow.net",
     "bridge": [
@@ -77,6 +82,7 @@
   },
   {
     "name": "DeWallet",
+    "app_name": "DeWallet",
     "image": "https://app.delabwallet.com/logo_black.png",
     "about_url": "https://delabwallet.com",
     "bridge": [
@@ -89,6 +95,7 @@
   },
   {
     "name": "XTONWallet",
+    "app_name": "XTONWallet",
     "image": "https://xtonwallet.com/assets/img/icon-256-back.png",
     "about_url": "https://xtonwallet.com",
     "bridge": [
@@ -101,6 +108,7 @@
   },
   {
     "name": "TON Wallet",
+    "app_name": "TON Wallet",
     "image": "https://wallet.ton.org/assets/ui/qr-logo.png",
     "about_url": "https://chrome.google.com/webstore/detail/ton-wallet/nphplpgoakhhjchkkhmiggakijnkhfnd",
     "bridge": [
