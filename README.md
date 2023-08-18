@@ -10,6 +10,7 @@ Each entry has the following format (subject to change):
 
 ```json
 {
+  "app_name": "tonkeeper",
   "name": "Tonkeeper",
   "image": "https://tonkeeper.com/assets/tonconnect-icon.png",
   "tondns":  "tonkeeper.ton",
@@ -30,6 +31,7 @@ Each entry has the following format (subject to change):
 ```
 
 #### Description
+- `app_name`: string ID of your wallet. Must be equal with `ConnectEventSuccess.device.appName` and js bridge `key`
 - `name`: name of your wallet. Will be displayed in the dapp.
 - `image`: url to the icon of your wallet. Will be displayed in the dapp. Resolution 288×288px. On non-transparent background, without rounded corners. PNG format.
 - `tondns`: (optional) will be used in the protocol later.
