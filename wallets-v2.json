@@ -61,7 +61,7 @@
         "url": "https://tonconnectbridge.mytonwallet.org/bridge/"
       }
     ],
-    "platforms": ["chrome", "windows", "macos", "linux"]
+    "platforms": ["chrome", "windows", "macos", "linux", "ios", "android", "firefox"]
   },
   {
     "app_name": "tonhub",
