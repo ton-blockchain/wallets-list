@@ -82,19 +82,6 @@
     "platforms": ["ios", "android"]
   },
   {
-    "app_name": "tonflow",
-    "name": "TonFlow",
-    "image": "https://tonflow.net/assets/images/tonflow_ico_192.png",
-    "about_url": "https://tonflow.net",
-    "bridge": [
-      {
-        "type": "js",
-        "key": "tonflow"
-      }
-    ],
-    "platforms": ["chrome"]
-  },
-  {
     "app_name": "dewallet",
     "name": "DeWallet",
     "image": "https://app.delabwallet.com/logo_black.png",
