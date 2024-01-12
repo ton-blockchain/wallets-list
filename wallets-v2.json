@@ -34,19 +34,6 @@
     "platforms": ["ios", "android", "chrome", "firefox", "macos"]
   },
   {
-    "app_name": "openmask",
-    "name": "OpenMask",
-    "image": "https://raw.githubusercontent.com/OpenProduct/openmask-extension/main/public/openmask-logo-288.png",
-    "about_url": "https://www.openmask.app/",
-    "bridge": [
-      {
-        "type": "js",
-        "key": "openmask"
-      }
-    ],
-    "platforms": ["chrome"]
-  },
-  {
     "app_name": "mytonwallet",
     "name": "MyTonWallet",
     "image": "https://mytonwallet.io/icon-256.png",
@@ -63,6 +50,19 @@
       }
     ],
     "platforms": ["chrome", "windows", "macos", "linux", "ios", "android", "firefox"]
+  },
+  {
+    "app_name": "openmask",
+    "name": "OpenMask",
+    "image": "https://raw.githubusercontent.com/OpenProduct/openmask-extension/main/public/openmask-logo-288.png",
+    "about_url": "https://www.openmask.app/",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "openmask"
+      }
+    ],
+    "platforms": ["chrome"]
   },
   {
     "app_name": "tonhub",
