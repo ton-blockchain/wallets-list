@@ -87,13 +87,19 @@
     "name": "DeWallet",
     "image": "https://app.delabwallet.com/logo_black.png",
     "about_url": "https://delabwallet.com",
+    "universal_url": "https://t.me/delabtonbot/wallet?attach=wallet",
     "bridge": [
       {
         "type": "js",
         "key": "dewallet"
+      },
+      {
+        "type": "sse",
+        "url": "https://bridge.tonapi.io/bridge"
       }
+
     ],
-    "platforms": ["chrome"]
+    "platforms": ["chrome", "ios", "android", "macos", "windows", "linux"]
   },
   {
     "app_name": "xtonwallet",
