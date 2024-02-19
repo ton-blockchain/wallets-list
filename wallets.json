@@ -7,7 +7,7 @@
     "bridge": [
       {
         "type": "js",
-        "key": "safepal"
+        "key": "safepalwallet"
       }
     ]
   },
