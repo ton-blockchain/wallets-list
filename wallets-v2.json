@@ -39,6 +39,7 @@
     "image": "https://mytonwallet.io/icon-256.png",
     "about_url": "https://mytonwallet.io",
     "universal_url": "https://connect.mytonwallet.org",
+    "deepLink": "mytonwallet-tc://",
     "bridge": [
       {
         "type": "js",
