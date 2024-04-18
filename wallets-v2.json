@@ -49,7 +49,15 @@
         "url": "https://tonconnectbridge.mytonwallet.org/bridge/"
       }
     ],
-    "platforms": ["chrome", "windows", "macos", "linux", "ios", "android", "firefox"]
+    "platforms": [
+      "chrome",
+      "windows",
+      "macos",
+      "linux",
+      "ios",
+      "android",
+      "firefox"
+    ]
   },
   {
     "app_name": "openmask",
@@ -120,5 +128,18 @@
       }
     ],
     "platforms": ["chrome"]
+  },
+  {
+    "app_name": "bitgetTonWallet",
+    "name": "Bitget Wallet",
+    "image": "https://raw.githubusercontent.com/bitkeepwallet/download/main/logo/png/bitget%20wallet_logo_iOS.png",
+    "about_url": "https://web3.bitget.com",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "bitgetTonWallet"
+      }
+    ],
+    "platforms": ["ios", "android", "chrome"]
   }
 ]
