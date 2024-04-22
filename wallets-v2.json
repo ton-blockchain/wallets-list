@@ -120,5 +120,19 @@
       }
     ],
     "platforms": ["chrome"]
+  },
+  {
+    "app_name": "tobi-wallet",
+    "name": "Tobi Wallet",
+    "image": "https://app.tobiwallet.app/icons/logo.jpg",
+    "about_url": "https://tobiwallet.io",
+    "universal_url": "https://t.me/TobiWalletBot",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://bridge.tonapi.io/bridge"
+      }
+    ],
+    "platforms": ["ios", "android", "macos", "windows", "linux"]
   }
 ]
