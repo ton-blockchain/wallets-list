@@ -8,7 +8,7 @@
     "bridge": [
       {
         "type": "sse",
-        "url": "https://bridge.tonapi.io/bridge"
+        "url": "https://bridge.ton.space/bridge"
       }
     ],
     "platforms": ["ios", "android", "macos", "windows", "linux"]
