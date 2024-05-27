@@ -132,6 +132,6 @@
         "key": "gatetonwallet"
       }
     ],
-    "platforms": ["chrome", "ios", "android"]
+    "platforms": ["chrome", "windows", "mac","ios", "android"]
   }
 ]
