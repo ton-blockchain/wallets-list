@@ -96,7 +96,7 @@
       }
 
     ],
-    "platforms": ["ios", "android", "macos", "windows", "linux"]
+    "platforms": ["ios", "android"]
   },
   {
     "app_name": "xtonwallet",
