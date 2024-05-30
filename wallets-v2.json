@@ -134,6 +134,7 @@
     "name": "Bitget Wallet",
     "image": "https://raw.githubusercontent.com/bitkeepwallet/download/main/logo/png/bitget%20wallet_logo_iOS.png",
     "about_url": "https://web3.bitget.com",
+    "deepLink": "bitkeep://",
     "bridge": [
       {
         "type": "js",
