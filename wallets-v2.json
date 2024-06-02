@@ -123,5 +123,18 @@
       }
     ],
     "platforms": ["chrome"]
+  },
+  {
+    "app_name": "gatetonwallet",
+    "name": "Gate Wallet",
+    "image": "https://www.gate.io/images/apple-touch-icon-120x120.png",
+    "about_url": "https://www.gate.io/web3",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "gatetonwallet"
+      }
+    ],
+    "platforms": ["chrome", "windows", "mac","ios", "android"]
   }
 ]
