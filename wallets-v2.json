@@ -123,5 +123,22 @@
       }
     ],
     "platforms": ["chrome"]
+  },
+  {
+    "app_name": "bitgetTonWallet",
+    "name": "Bitget Wallet",
+    "image": "https://raw.githubusercontent.com/bitkeepwallet/download/main/logo/png/small-circle-logo180.png",
+    "about_url": "https://web3.bitget.com",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "bitkeep"
+      },
+      {
+        "type": "sse",
+        "url": "https://bridge.tonapi.io/bridge"
+      }
+    ],
+    "platforms": ["ios", "android", "chrome"]
   }
 ]
