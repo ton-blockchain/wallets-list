@@ -136,7 +136,7 @@
       },
       {
         "type": "sse",
-        "url": "https://bridge.tonapi.io/bridge"
+        "url": "https://bkcode.vip/ton-connect"
       }
     ],
     "platforms": ["ios", "android", "chrome"]
