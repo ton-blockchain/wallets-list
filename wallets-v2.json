@@ -85,7 +85,7 @@
   {
     "app_name": "dewallet",
     "name": "DeWallet",
-    "image": "https://delab-team.ams3.cdn.digitaloceanspaces.com/icons/WalletAvatar.png",
+    "image": "https://de-cdn.delab.team/icons/WalletAvatar.png",
     "about_url": "https://delabwallet.com",
     "universal_url": "https://t.me/delabtonbot/wallet?attach=wallet",
     "bridge": [
