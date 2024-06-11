@@ -49,7 +49,15 @@
         "url": "https://tonconnectbridge.mytonwallet.org/bridge/"
       }
     ],
-    "platforms": ["chrome", "windows", "macos", "linux", "ios", "android", "firefox"]
+    "platforms": [
+      "chrome",
+      "windows",
+      "macos",
+      "linux",
+      "ios",
+      "android",
+      "firefox"
+    ]
   },
   {
     "app_name": "openmask",
@@ -85,14 +93,14 @@
   {
     "app_name": "dewallet",
     "name": "DeWallet",
-    "image": "https://delab-team.ams3.cdn.digitaloceanspaces.com/icons/WalletAvatar.png",
+    "image": "https://de-cdn.delab.team/icons/WalletAvatar.png",
     "about_url": "https://delabwallet.com",
     "universal_url": "https://t.me/delabtonbot/wallet?attach=wallet",
     "bridge": [
      
       {
         "type": "sse",
-        "url": "https://bridge.tonapi.io/bridge"
+        "url": "https://sse-bridge.delab.team/bridge"
       }
 
     ],
@@ -127,8 +135,9 @@
   {
     "app_name": "bitgetTonWallet",
     "name": "Bitget Wallet",
-    "image": "https://raw.githubusercontent.com/bitkeepwallet/download/main/logo/png/small-circle-logo180.png",
+    "image": "https://raw.githubusercontent.com/bitkeepwallet/download/main/logo/png/bitget%20wallet_logo_iOS.png",
     "about_url": "https://web3.bitget.com",
+    "deepLink": "bitkeep://",
     "bridge": [
       {
         "type": "js",
@@ -136,9 +145,10 @@
       },
       {
         "type": "sse",
-        "url": "https://bkcode.vip/ton-connect"
+        "url": "https://bridge.tonapi.io/bridge"
       }
     ],
-    "platforms": ["ios", "android", "chrome"]
+    "platforms": ["ios", "android", "chrome"],
+    "universal_url": "https://bkcode.vip/ton-connect"
   }
 ]
