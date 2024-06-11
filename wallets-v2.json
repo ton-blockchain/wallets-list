@@ -150,5 +150,19 @@
     ],
     "platforms": ["ios", "android", "chrome"],
     "universal_url": "https://bkcode.vip/ton-connect"
+  },
+  {
+    "app_name": "mathwallet",
+    "name": "MathWallet",
+    "image": "https://mathwallet.oss-cn-hangzhou.aliyuncs.com/mathwallet5/logo.png",
+    "about_url": "https://mathwallet.org",
+    "deepLink": "mathwallet-tc://",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://bridge.tonapi.io/bridge"
+      }
+    ],
+    "platforms": ["ios", "android"]
   }
 ]
