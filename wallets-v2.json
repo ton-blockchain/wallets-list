@@ -95,7 +95,7 @@
     "name": "DeWallet",
     "image": "https://de-cdn.delab.team/icons/WalletAvatar.png",
     "about_url": "https://delabwallet.com",
-    "universal_url": "https://t.me/delabtonbot/wallet?attach=wallet",
+    "universal_url": "https://t.me/delabtonbot?attach=wallet",
     "bridge": [
      
       {
