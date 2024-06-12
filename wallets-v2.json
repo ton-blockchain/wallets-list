@@ -152,7 +152,7 @@
     "universal_url": "https://bkcode.vip/ton-connect"
   },
   {
-    "app_name": "nicegram-wallet",
+    "app_name": "nicegramWallet",
     "name": "Nicegram Wallet",
     "image": "https://static.nicegram.app/icon.png",
     "about_url": "https://nicegram.app",
@@ -162,6 +162,10 @@
       {
         "type": "sse",
         "url": "https://bridge.tonapi.io/bridge"
+      },
+      {
+        "type": "js",
+        "key": "nicegramWallet"
       }
     ],
     "platforms": ["ios", "android"]
