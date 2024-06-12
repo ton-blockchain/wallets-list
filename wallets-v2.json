@@ -95,14 +95,12 @@
     "name": "DeWallet",
     "image": "https://raw.githubusercontent.com/delab-team/manifests-images/main/WalletAvatar.png",
     "about_url": "https://delabwallet.com",
-    "universal_url": "https://t.me/delabtonbot?attach=wallet",
+    "universal_url": "https://t.me/dewallet?attach=wallet",
     "bridge": [
-     
       {
         "type": "sse",
         "url": "https://sse-bridge.delab.team/bridge"
       }
-
     ],
     "platforms": ["ios", "android"]
   },
