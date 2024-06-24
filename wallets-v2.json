@@ -148,5 +148,25 @@
     ],
     "platforms": ["ios", "android", "chrome"],
     "universal_url": "https://bkcode.vip/ton-connect"
+  },
+  {
+    "app_name": "sender",
+    "name": "Sender Wallet",
+    "image": "https://senderwallet.io/_next/static/media/sender-logo.f97a378a.png?imwidth=256",
+    "about_url": "https://senderwallet.io",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "sender"
+      }
+    ],
+    "platforms": [
+      "chrome",
+      "Edge",
+      "Brave",
+      "Kiwi",
+      "ios",
+      "android"
+    ]
   }
 ]
