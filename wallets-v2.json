@@ -146,7 +146,6 @@
         "url": "https://bridge.tonapi.io/bridge"
       }
     ],
-    "platforms": ["ios", "android", "macos", "windows", "linux"]
     "platforms": ["ios", "android", "chrome"],
     "universal_url": "https://bkcode.vip/ton-connect"
   },
