@@ -49,7 +49,15 @@
         "url": "https://tonconnectbridge.mytonwallet.org/bridge/"
       }
     ],
-    "platforms": ["chrome", "windows", "macos", "linux", "ios", "android", "firefox"]
+    "platforms": [
+      "chrome",
+      "windows",
+      "macos",
+      "linux",
+      "ios",
+      "android",
+      "firefox"
+    ]
   },
   {
     "app_name": "openmask",
@@ -85,15 +93,16 @@
   {
     "app_name": "dewallet",
     "name": "DeWallet",
-    "image": "https://app.delabwallet.com/logo_black.png",
+    "image": "https://raw.githubusercontent.com/delab-team/manifests-images/main/WalletAvatar.png",
     "about_url": "https://delabwallet.com",
+    "universal_url": "https://t.me/dewallet?attach=wallet",
     "bridge": [
       {
-        "type": "js",
-        "key": "dewallet"
+        "type": "sse",
+        "url": "https://sse-bridge.delab.team/bridge"
       }
     ],
-    "platforms": ["chrome"]
+    "platforms": ["ios", "android"]
   },
   {
     "app_name": "xtonwallet",
@@ -120,6 +129,26 @@
       }
     ],
     "platforms": ["chrome"]
+  },
+  {
+    "app_name": "bitgetTonWallet",
+    "name": "Bitget Wallet",
+    "image": "https://raw.githubusercontent.com/bitkeepwallet/download/main/logo/png/bitget%20wallet_logo_iOS.png",
+    "about_url": "https://web3.bitget.com",
+    "deepLink": "bitkeep://",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "bitgetTonWallet"
+      },
+      {
+        "type": "sse",
+        "url": "https://bridge.tonapi.io/bridge"
+      }
+    ],
+    "platforms": ["ios", "android", "macos", "windows", "linux"]
+    "platforms": ["ios", "android", "chrome"],
+    "universal_url": "https://bkcode.vip/ton-connect"
   },
   {
     "app_name": "tobi",
