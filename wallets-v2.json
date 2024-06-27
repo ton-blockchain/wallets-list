@@ -148,5 +148,19 @@
     ],
     "platforms": ["ios", "android", "chrome"],
     "universal_url": "https://bkcode.vip/ton-connect"
+  },
+  {
+    "app_name": "fintopio-tg",
+    "name": "Fintopio Telegram",
+    "image": "https://fintopio.com/favicons/favicon-196x196.png",
+    "about_url": "https://fintopio.com",
+    "universal_url": "https://t.me/fintopio/wallet",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://wallet-bridge.fintopio.com/bridge"
+      }
+    ],
+    "platforms": ["ios", "android", "macos", "windows", "linux"]
   }
 ]
