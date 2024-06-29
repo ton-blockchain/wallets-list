@@ -132,7 +132,7 @@
   {
     "app_name": "bitgetTonWallet",
     "name": "Bitget Wallet",
-    "image": "https://raw.githubusercontent.com/bitkeepwallet/download/main/logo/png/bitget%20wallet_logo_iOS.png",
+    "image": "https://github.com/bitgetwallet/download/blob/main/logo/png/bitget_wallet_logo_0_gas_fee.png",
     "about_url": "https://web3.bitget.com",
     "deepLink": "bitkeep://",
     "bridge": [
