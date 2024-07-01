@@ -157,7 +157,7 @@
   "about_url": "https://www.safepal.com",
   "universal_url": "https://link.safepal.io/ton-connect",
   "deepLink": "safepal-tc://",
-  "bridge": [ 
+  "bridge": [
      {
         "type": "sse",
         "url": "https://ton-bridge.safepal.com/tonbridge/v1/bridge"
@@ -168,5 +168,19 @@
      }
   ],
   "platforms": ["ios", "android", "chrome", "firefox"]
- }
+ },
+  {
+    "app_name": "fintopio-tg",
+    "name": "Fintopio Telegram",
+    "image": "https://fintopio.com/favicons/favicon-196x196.png",
+    "about_url": "https://fintopio.com",
+    "universal_url": "https://t.me/fintopio/wallet",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://wallet-bridge.fintopio.com/bridge"
+      }
+    ],
+    "platforms": ["ios", "android", "macos", "windows", "linux"]
+  }
 ]
