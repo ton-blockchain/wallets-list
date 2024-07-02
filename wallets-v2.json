@@ -150,6 +150,26 @@
     "universal_url": "https://bkcode.vip/ton-connect"
   },
   {
+  "app_name": "safepalwallet",
+  "name": "SafePal",
+  "image": "https://s.pvcliping.com/web/public_image/SafePal_x288.png",
+  "tondns":  "",
+  "about_url": "https://www.safepal.com",
+  "universal_url": "https://link.safepal.io/ton-connect",
+  "deepLink": "safepal-tc://",
+  "bridge": [ 
+     {
+        "type": "sse",
+        "url": "https://ton-bridge.safepal.com/tonbridge/v1/bridge"
+     },
+     {
+        "type": "js",
+        "key": "safepalwallet"
+     }
+  ],
+  "platforms": ["ios", "android", "chrome", "firefox"]
+ },
+  {
     "app_name": "mathwallet",
     "name": "MathWallet",
     "image": "https://avatars.githubusercontent.com/u/49776094?s=200&v=4",
@@ -168,4 +188,5 @@
     ],
     "platforms": ["ios", "android"]
   }
+
 ]
