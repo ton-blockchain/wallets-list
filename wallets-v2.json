@@ -168,5 +168,18 @@
      }
   ],
   "platforms": ["ios", "android", "chrome", "firefox"]
- }
+ },
+  {
+  "app_name": "OpenBlock",
+  "name": "OpenBlock Wallet",
+  "image": "https://obstatic.243096.com/download/dapp/sdk/images/logo.png",
+  "about_url": "https://openblock.com/#/download",
+  "bridge": [
+    {
+      "type": "js",
+      "key": "obtonwallet"
+    }
+  ],
+  "platforms": ["chrome", "firefox"]
+}
 ]
