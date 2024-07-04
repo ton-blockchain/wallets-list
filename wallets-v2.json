@@ -180,6 +180,6 @@
       "key": "obtonwallet"
     }
   ],
-  "platforms": ["chrome", "firefox"]
+  "platforms": ["ios", "android", "chrome", "firefox"]
 }
 ]
