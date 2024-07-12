@@ -168,5 +168,47 @@
      }
   ],
   "platforms": ["ios", "android", "chrome", "firefox"]
- }
+ },
+ {
+  "app_name": "okxTonWalletTr",
+  "name": "OKX Wallet",
+  "image": "https://static.coinall.ltd/cdn/assets/imgs/247/58E63FEA47A2B7D7.png",
+  "about_url": "https://www.tr.okx.com/web3",
+  "universal_url": "https://www.ouxyi.link/ul/uYJPB0?entityId=5",
+  "bridge": [
+      {
+        "type": "js",
+        "key": "okxTonWallet"
+      },
+      {
+        "type": "sse",
+        "url": "https://www.okx.com/tonbridge/discover/rpc/bridge"
+      }
+    ],
+    "platforms": [
+      "chrome",
+      "safari",
+      "firefox",
+      "ios",
+      "android"
+    ]
+  },
+  {
+    "app_name": "okxTonWallet",
+    "name": "OKX Wallet",
+    "image": "https://static.coinall.ltd/cdn/assets/imgs/247/58E63FEA47A2B7D7.png",
+    "about_url": "https://www.okx.com/web3",
+    "universal_url": "https://www.ouxyi.link/ul/uYJPB0",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "okxTonWallet"
+      },
+      {
+        "type": "sse",
+        "url": "https://www.okx.com/tonbridge/discover/rpc/bridge"
+      }
+    ],
+    "platforms": ["chrome", "safari", "firefox", "ios", "android"]
+  }
 ]
