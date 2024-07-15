@@ -168,5 +168,18 @@
      }
   ],
   "platforms": ["ios", "android", "chrome", "firefox"]
- }
+ },
+ {
+ "app_name": "exoduswallet",
+ "name": "Exodus",
+ "image": "https://www.exodus.com/brand/dl/images/Exodus_symbol.png",
+ "about_url": "https://www.exodus.com/",
+ "bridge": [ 
+    {
+       "type": "js",
+       "key": "exoduswallet"
+    }
+ ],
+ "platforms": ["ios", "android", "chrome"]
+}
 ]
