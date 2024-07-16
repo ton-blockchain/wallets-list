@@ -170,6 +170,24 @@
   "platforms": ["ios", "android", "chrome", "firefox"]
  },
  {
+    "app_name": "okxTonWallet",
+    "name": "OKX Wallet",
+    "image": "https://static.okx.com/cdn/assets/imgs/247/58E63FEA47A2B7D7.png",
+    "about_url": "https://www.okx.com/web3",
+    "universal_url": "https://www.ouxyi.link/ul/uYJPB0",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "okxTonWallet"
+      },
+      {
+        "type": "sse",
+        "url": "https://www.okx.com/tonbridge/discover/rpc/bridge"
+      }
+    ],
+    "platforms": ["chrome", "safari", "firefox", "ios", "android"]
+  },
+ {
   "app_name": "okxTonWalletTr",
   "name": "OKX TR Wallet",
   "image": "https://static.okx.com/cdn/assets/imgs/247/587A8296F0BB640F.png",
@@ -192,23 +210,5 @@
       "ios",
       "android"
     ]
-  },
-  {
-    "app_name": "okxTonWallet",
-    "name": "OKX Wallet",
-    "image": "https://static.okx.com/cdn/assets/imgs/247/58E63FEA47A2B7D7.png",
-    "about_url": "https://www.okx.com/web3",
-    "universal_url": "https://www.ouxyi.link/ul/uYJPB0",
-    "bridge": [
-      {
-        "type": "js",
-        "key": "okxTonWallet"
-      },
-      {
-        "type": "sse",
-        "url": "https://www.okx.com/tonbridge/discover/rpc/bridge"
-      }
-    ],
-    "platforms": ["chrome", "safari", "firefox", "ios", "android"]
   }
 ]
