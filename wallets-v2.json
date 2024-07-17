@@ -201,7 +201,7 @@
       }
     ],
     "platforms": ["chrome", "safari", "firefox", "ios", "android"]
- },
+  },
  {
   "app_name": "okxTonWalletTr",
   "name": "OKX TR Wallet",
