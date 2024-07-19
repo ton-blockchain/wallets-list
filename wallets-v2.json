@@ -210,5 +210,24 @@
       "ios",
       "android"
     ]
+  },
+  {
+    "app_name": "ecoinTonWallet",
+    "name": "ECOIN Wallet",
+    "image": "https://ecoinwallet.org/ton/logo.png",
+    "about_url": "https://ecoinfinance.org",
+    "deepLink": "ecoinwallet://",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "ecoinTonWallet"
+      },
+      {
+        "type": "sse",
+        "url": "https://bridge.tonapi.io/bridge"
+      }
+    ],
+    "platforms": ["android"],
+    "universal_url": "https:/ecoinwallet.org/ton-connect"
   }
 ]
