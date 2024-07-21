@@ -210,5 +210,24 @@
       "ios",
       "android"
     ]
+  },
+  {
+    "app_name": "bybitTonWallet",
+    "name": "Bybit Wallet",
+    "image": "https://static.bymj.io/bhop/image/Q3Kmzw7qczSZF5eqfo6pW8QuT1MDMmqC80lWxFBhiE0.png",
+    "about_url": "https://www.bybit.com",
+    "universal_url": "https://app.bybit.com/ton-connect",
+    "deepLink": "bybitapp://",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "bybitTonWallet"
+      },
+      {
+        "type": "sse",
+        "url": "https://bridge.tonapi.io/bridge"
+      }
+    ],
+    "platforms": ["ios", "android", "chrome"]
   }
 ]
