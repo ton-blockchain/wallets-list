@@ -222,6 +222,10 @@
       {
         "type": "js",
         "key": "cdcTonWallet"
+      },
+      {
+        "type": "sse",
+        "url": "https://bridge.tonapi.io/bridge"
       }
     ],
     "platforms": ["ios", "android", "chrome"]
