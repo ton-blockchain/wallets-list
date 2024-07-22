@@ -36,7 +36,7 @@
   {
     "app_name": "mytonwallet",
     "name": "MyTonWallet",
-    "image": "https://mytonwallet.io/icon-256.png",
+    "image": "https://static.mytonwallet.io/icon-256.png",
     "about_url": "https://mytonwallet.io",
     "universal_url": "https://connect.mytonwallet.org",
     "bridge": [
