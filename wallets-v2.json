@@ -210,5 +210,20 @@
       "ios",
       "android"
     ]
+  },
+  {
+    "app_name": "cdcTonWallet",
+    "name": "Crypto.com DeFi Wallet",
+    "image": "https://apro-ncw-api-file.crypto.com/wallet/logo",
+    "about_url": "https://crypto.com/defi-wallet",
+    "universal_url": "https://wallet.crypto.com/deeplink/ton-connect",
+    "deepLink": "dfw://",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "cdcTonWallet"
+      }
+    ],
+    "platforms": ["ios", "android", "chrome"]
   }
 ]
