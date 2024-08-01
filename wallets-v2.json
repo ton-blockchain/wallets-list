@@ -210,5 +210,18 @@
       "ios",
       "android"
     ]
+  },
+  {
+    "app_name": "nestwallet",
+    "name": "Nest Wallet",
+    "image": "https://storage.googleapis.com/nestwallet-public-resource-bucket/logo/nest_logo_square.png",
+    "about_url": "https://www.nestwallet.xyz",
+    "bridge": [ 
+       {
+          "type": "js",
+          "key": "nestwallet"
+       }
+    ],
+    "platforms": ["android", "chrome"]
   }
 ]
