@@ -210,5 +210,18 @@
       "ios",
       "android"
     ]
+  },
+  {
+    "app_name": "tokenpocket",
+    "name": "TokenPocket",
+    "image": "https://hk.tpstatic.net/logo/tokenpocket.png",
+    "about_url": "https://tokenpocket.pro",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "tokenpocket"
+      }
+    ],
+    "platforms": ["ios", "android"]
   }
 ]
