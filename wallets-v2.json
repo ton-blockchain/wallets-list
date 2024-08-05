@@ -222,6 +222,6 @@
           "key": "nestwallet"
        }
     ],
-    "platforms": ["android", "chrome"]
+    "platforms": ["chrome"]
   }
 ]
