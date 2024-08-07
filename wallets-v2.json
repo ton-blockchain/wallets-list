@@ -210,5 +210,23 @@
       "ios",
       "android"
     ]
+  },
+  {
+    "app_name": "GateWallet",
+    "name": "GateWallet",
+    "image": "https://www.gate.io/images/login/qrcode_center_icon.svg",
+    "about_url": "https://www.gate.io/",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "gatetonwallet"
+      },
+      {
+        "type": "sse",
+        "url": "https://dapp.gateio.services/tonbridge_api/bridge/v1"
+      }
+    ],
+    "platforms": ["ios", "android", "chrome"],
+    "universal_url": "https://gateio.onelink.me/DmA6/web3"
   }
 ]
