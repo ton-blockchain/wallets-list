@@ -173,9 +173,7 @@
   "app_name": "WebViewJavascriptBridge",
   "name": "Ave.ai",
   "image": "https://ave.ai/static/img/avedex_mobile_logo.d923452b.png",
-  "tondns":  "",
   "about_url": "https://ave.ai/",
-  "universal_url": "",
   "deepLink": "ave://",
   "bridge": [
      {
