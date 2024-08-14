@@ -4,7 +4,7 @@
     "name": "Wallet",
     "image": "https://wallet.tg/images/logo-288.png",
     "about_url": "https://wallet.tg/",
-    "universal_url": "https://t.me/wallet?attach=wallet",
+    "universal_url": "https://t.me/wallet?attach=wallet&mode=compact",
     "bridge": [
       {
         "type": "sse",
@@ -157,7 +157,7 @@
   "about_url": "https://www.safepal.com",
   "universal_url": "https://link.safepal.io/ton-connect",
   "deepLink": "safepal-tc://",
-  "bridge": [ 
+  "bridge": [
      {
         "type": "sse",
         "url": "https://ton-bridge.safepal.com/tonbridge/v1/bridge"
