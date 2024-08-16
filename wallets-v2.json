@@ -210,5 +210,23 @@
       "ios",
       "android"
     ]
+  },
+  {
+    "app_name": "hot",
+    "name": "HOT",
+    "image": "https://storage.herewallet.app/logo.png",
+    "about_url": "https://hot-labs.org/",
+    "universal_url": "https://t.me/herewalletbot?attach=wallet",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://sse-bridge.hot-labs.org"
+      },
+      {
+        "type": "js",
+        "key": "hotWallet"
+      }
+    ],
+    "platforms": ["ios", "android", "macos", "windows", "linux"]
   }
 ]
