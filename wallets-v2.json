@@ -214,7 +214,7 @@
   {
     "app_name": "hot",
     "name": "HOT",
-    "image": "https://storage.herewallet.app/logo.png",
+    "image": "https://raw.githubusercontent.com/hot-dao/media/main/logo.png",
     "about_url": "https://hot-labs.org/",
     "universal_url": "https://t.me/herewalletbot?attach=wallet",
     "bridge": [
