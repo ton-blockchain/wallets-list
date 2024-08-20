@@ -99,10 +99,10 @@
     "bridge": [
       {
         "type": "sse",
-        "url": "https://sse-bridge.delab.team/bridge"
+        "url": "https://bridge.dewallet.pro/bridge"
       }
     ],
-    "platforms": ["ios", "android"]
+    "platforms": ["ios", "android", "macos", "windows", "linux"]
   },
   {
     "app_name": "xtonwallet",
