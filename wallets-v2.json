@@ -247,5 +247,23 @@
       }
     ],
     "platforms": ["ios", "android"]
+  },
+  {
+    "app_name": "hdton",
+    "name": "HdTon",
+    "image": "https://hddefi.com/logo.png",
+    "about_url": "https://hddefi.com",
+    "universal_url": "https://hddefi.com",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://bridge.tonapi.io/bridge"
+      },
+      {
+        "type": "js",
+        "key": "hdton"
+      }
+    ],
+    "platforms": ["ios", "android"]
   }
 ]
