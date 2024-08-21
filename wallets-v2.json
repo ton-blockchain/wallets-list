@@ -228,5 +228,19 @@
       }
     ],
     "platforms": ["ios", "android", "macos", "windows", "linux"]
+  },
+  {
+    "app_name": "aabank",
+    "name": "AABank",
+    "image": "https://raw.githubusercontent.com/hot-dao/media/main/logo.png",
+    "about_url": "https://docs.aabank.xyz/",
+    "universal_url": "https://t.me/AAbank_bot/AAbank?attach=wallet",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://sse-bridge.hot-labs.org"
+      }
+    ],
+    "platforms": ["ios", "android", "windows", "chrome", "safari", "firefox"]
   }
 ]
