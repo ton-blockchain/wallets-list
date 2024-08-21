@@ -210,5 +210,23 @@
       "ios",
       "android"
     ]
+  },
+  {
+    "app_name": "hpyTonWallet",
+    "name": "HyperPay Wallet",
+    "image": "https://hyperpay-website.oss-cn-hongkong.aliyuncs.com/static/dist/images/2022-12-30/logo.png",
+    "about_url": "https://www.hyperpay.tech",
+    "universal_url": "https://www.hyperpay.tech/download&deeplink=hyperpay://web3/wallet/tonconnect",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "hpyTonWallet"
+      },
+      {
+        "type": "sse",
+        "url": "https://bridge.tonapi.io/bridge"
+      }
+    ],
+    "platforms": ["ios", "android"]
   }
 ]
