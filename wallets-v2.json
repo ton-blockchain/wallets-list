@@ -232,7 +232,7 @@
   {
     "app_name": "aabank",
     "name": "AABank",
-    "image": "https://raw.githubusercontent.com/hot-dao/media/main/logo.png",
+    "image": "https://cdn.aabank.xyz/aabank-img/aabank_logo_dark_s.png",
     "about_url": "https://docs.aabank.xyz/",
     "universal_url": "https://t.me/AAbank_bot/AAbank?attach=wallet",
     "bridge": [
