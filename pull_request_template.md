@@ -1,10 +1,10 @@
 # Add <WALLET_NAME> wallet
 
 ## Supports
-- [ ] JS bridge as a browser extention for [Google Chrome](<chrome store url>), ..., browsers.
-- [x] JS bridge for the in-wallet browser for [iOS](<appstore link>) and [Android](<google play link>).
+- [x] JS bridge as a browser extention for [Google Chrome](<chrome store url>), ..., browsers.
+- [ ] JS bridge for the in-wallet browser for [iOS](<appstore link>) and [Android](<google play link>).
 - [ ] JS bridge for in-wallet browser for [Windows](<link>), [macOS](<link>), ... .
-- [ ] HTTP bridge as a mobile wallet app for [iOS](<appstore link>) and [Android](<google play link>).
+- [x] HTTP bridge as a mobile wallet app for [iOS](<appstore link>) and [Android](<google play link>).
 - [ ] HTTP bridge as a desctop wallet app for [Windows](<link>), [macOS](<link>), ... .
 
 ## Supported features
@@ -13,7 +13,7 @@
 
 
 ## Tests
-[a demo dapp with integrated wallet](https://macomni.github.io/demo-dapp-with-react-ui/)
+[a demo dapp with integrated wallet](link)
 
 ## Integrator contacts
 * telegram
