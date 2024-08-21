@@ -238,9 +238,9 @@
     "bridge": [
       {
         "type": "sse",
-        "url": "https://sse-bridge.hot-labs.org"
+        "url": "https://bridge.tonapi.io/bridge"
       }
     ],
-    "platforms": ["ios", "android", "windows", "chrome", "safari", "firefox"]
+    "platforms": ["ios", "android", "chrome", "safari", "firefox"]
   }
 ]
