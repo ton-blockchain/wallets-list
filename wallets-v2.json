@@ -4,7 +4,7 @@
     "name": "Wallet",
     "image": "https://wallet.tg/images/logo-288.png",
     "about_url": "https://wallet.tg/",
-    "universal_url": "https://t.me/wallet?attach=wallet",
+    "universal_url": "https://t.me/wallet?attach=wallet&mode=compact",
     "bridge": [
       {
         "type": "sse",
@@ -99,10 +99,10 @@
     "bridge": [
       {
         "type": "sse",
-        "url": "https://sse-bridge.delab.team/bridge"
+        "url": "https://bridge.dewallet.pro/bridge"
       }
     ],
-    "platforms": ["ios", "android"]
+    "platforms": ["ios", "android", "macos", "windows", "linux"]
   },
   {
     "app_name": "xtonwallet",
@@ -157,7 +157,7 @@
   "about_url": "https://www.safepal.com",
   "universal_url": "https://link.safepal.io/ton-connect",
   "deepLink": "safepal-tc://",
-  "bridge": [ 
+  "bridge": [
      {
         "type": "sse",
         "url": "https://ton-bridge.safepal.com/tonbridge/v1/bridge"
@@ -210,6 +210,24 @@
       "ios",
       "android"
     ]
+  },
+  {
+    "app_name": "hot",
+    "name": "HOT",
+    "image": "https://raw.githubusercontent.com/hot-dao/media/main/logo.png",
+    "about_url": "https://hot-labs.org/",
+    "universal_url": "https://t.me/herewalletbot?attach=wallet",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://sse-bridge.hot-labs.org"
+      },
+      {
+        "type": "js",
+        "key": "hotWallet"
+      }
+    ],
+    "platforms": ["ios", "android", "macos", "windows", "linux"]
   },
   {
     "app_name": "hpyTonWallet",
