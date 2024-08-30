@@ -561,5 +561,18 @@
         "ios",
         "android"
     ]
+  },
+  {
+    "app_name": "onekey",
+    "name": "OneKey",
+    "image": "https://uni.onekey-asset.com/static/logo/onekey-x288.png",
+    "about_url": "https://onekey.so",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "onekeyTonWallet"
+      }
+    ],
+    "platforms": ["chrome"]
   }
 ]
