@@ -256,14 +256,10 @@
     "universal_url": "https://hddefi.com",
     "bridge": [
       {
-        "type": "sse",
-        "url": "https://bridge.tonapi.io/bridge"
-      },
-      {
         "type": "js",
         "key": "hdton"
       }
     ],
-    "platforms": ["ios", "android"]
+    "platforms": ["android", "ios"]
   }
 ]
