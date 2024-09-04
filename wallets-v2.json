@@ -143,7 +143,7 @@
       },
       {
         "type": "sse",
-        "url": "https://bridge.tonapi.io/bridge"
+        "url": "https://ton-connect-bridge.bgwapi.io/bridge"
       }
     ],
     "platforms": ["ios", "android", "chrome"],
@@ -230,7 +230,27 @@
     ],
     "platforms": ["ios", "android", "macos", "windows", "linux"]
   },
-   {
+
+  {
+    "app_name": "bybitTonWallet",
+    "name": "Bybit Wallet",
+    "image": "https://s1.bycsi.com/bybit/deadpool/image-ac5bf003d25c4ae0bd21f3725694a850.png",
+    "about_url": "https://www.bybit.com/web3",
+    "universal_url": "https://app.bybit.com/ton-connect",
+    "deepLink": "bybitapp://",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "bybitTonWallet"
+      },
+      {
+        "type": "sse",
+        "url": "https://api-node.bybit.com/spot/api/web3/bridge/ton/bridge"
+      }
+    ],
+    "platforms": ["ios", "android"]
+  }
+ ,{
     "app_name": "mathwallet",
     "name": "MathWallet",
     "image": "https://avatars.githubusercontent.com/u/49776094?s=200&v=4",
