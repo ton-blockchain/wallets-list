@@ -247,5 +247,19 @@
       }
     ],
     "platforms": ["ios", "android"]
+  },
+  {
+    "app_name": "tomoWallet",
+    "name": "Tomo Wallet",
+    "image": "https://pub.tomo.inc/logo.png",
+    "about_url": "https://www.tomo.inc/",
+    "universal_url": "https://t.me/tomowalletbot/tomo_wallet_app",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://bridge.tonapi.io/bridge"
+      }
+    ],
+    "platforms": ["ios", "android", "macos", "windows", "linux"]
   }
 ]
