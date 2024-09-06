@@ -246,6 +246,6 @@
         "url": "https://api-node.bybit.com/spot/api/web3/bridge/ton/bridge"
       }
     ],
-    "platforms": ["ios", "android"]
+    "platforms": ["ios", "android", "chrome"]
   }
 ]
