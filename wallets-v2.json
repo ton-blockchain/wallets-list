@@ -215,12 +215,12 @@
     "app_name": "BitgetWeb3",
     "name": "BitgetWeb3",
     "image": "https://img.bitgetimg.com/image/third/1723701408284.png",
-    "about_url": "https://www.bitget.com",
-    "universal_url": "https://t.me/BitgetOfficialBot?attach=wallet",
+    "about_url": "​https://www.bitget.com",
+    "universal_url": "https://t.me/BitgetOfficialBot/web3Wallet",
     "bridge": [
       {
         "type": "sse",
-        "url": "https://bridge.tonapi.io/bridge"
+        "url": "https://ton-connect-bridge.bgwapi.io/bridge"
       }
     ],
     "platforms": ["ios", "android", "windows", "macos", "linux"]
