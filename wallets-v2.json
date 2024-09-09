@@ -262,7 +262,7 @@
       },
       {
         "type": "sse",
-        "url": "https://wallet.crypto.com/tonbridge"
+        "url": "https://wallet.crypto.com/sse/tonbridge"
       }
     ],
     "platforms": ["ios", "android", "chrome"]
