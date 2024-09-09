@@ -257,7 +257,7 @@
     "bridge": [
       {
         "type": "sse",
-        "url": "https://bridge.tonapi.io/bridge"
+        "url": "https://go-bridge.tomo.inc/bridge"
       }
     ],
     "platforms": ["ios", "android", "macos", "windows", "linux"]
