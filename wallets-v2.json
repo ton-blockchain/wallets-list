@@ -247,5 +247,20 @@
       }
     ],
     "platforms": ["ios", "android", "chrome"]
+  },
+  {
+    "app_name": "ONTO",
+    "name": "ONTO",
+    "image": "https://app.ont.io/ontoMsgPic/onto.png",
+    "tondns": "onto.app",
+    "about_url": "https://onto.app",
+    "universal_url": "https://onto.app/ton-connect",
+    "bridge": [
+    {
+        "type": "js",
+        "key": "onto"
+    }
+    ],
+    "platforms": ["ios", "android"]
   }
 ]
