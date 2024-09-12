@@ -182,7 +182,7 @@
       },
       {
         "type": "sse",
-        "url": "https://wallet.binance.com/tonbridge"
+        "url": "https://wallet.binance.com/tonbridge/bridge"
       }
     ],
     "platforms": ["chrome", "safari", "ios", "android"],
