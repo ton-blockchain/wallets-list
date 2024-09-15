@@ -131,6 +131,20 @@
     "platforms": ["chrome"]
   },
   {
+    "app_name": "bitgetWalletLite",
+    "name": "Bitget Wallet Lite",
+    "image": "https://github.com/bitgetwallet/download/blob/main/logo/png/bitget_wallet_lite_logo.png",
+    "about_url": "https://web3.bitget.com",
+    "universal_url": "https://t.me/BitgetWallet_TGBot/BGW",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://ton-connect-bridge.bgwapi.io/bridge"
+      }
+    ],
+    "platforms": ["ios", "android", "macos", "windows", "linux"]
+  },
+  {
     "app_name": "bitgetTonWallet",
     "name": "Bitget Wallet",
     "image": "https://raw.githubusercontent.com/bitkeepwallet/download/main/logo/png/bitget_wallet_logo_0_gas_fee.png",
