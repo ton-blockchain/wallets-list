@@ -133,7 +133,7 @@
   {
     "app_name": "bitgetWalletLite",
     "name": "Bitget Wallet Lite",
-    "image": "https://github.com/bitgetwallet/download/blob/main/logo/png/bitget_wallet_lite_logo.png",
+    "image": "https://raw.githubusercontent.com/bitgetwallet/download/main/logo/png/bitget_wallet_lite_logo.png",
     "about_url": "https://web3.bitget.com",
     "universal_url": "https://t.me/BitgetWallet_TGBot/BGW",
     "bridge": [
