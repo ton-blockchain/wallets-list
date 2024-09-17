@@ -247,5 +247,23 @@
       }
     ],
     "platforms": ["ios", "android", "chrome"]
+  },
+  {
+    "app_name": "GateWallet",
+    "name": "GateWallet",
+    "image": "https://prd-web-imgs.s3.ap-northeast-1.amazonaws.com/prd-ordinal-imgs/0192a45e72abbdfb/gateIo.png",
+    "about_url": "https://www.gate.io/",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "gatetonwallet"
+      },
+      {
+        "type": "sse",
+        "url": "https://dapp.gateio.services/tonbridge_api/bridge/v1"
+      }
+    ],
+    "platforms": ["ios", "android"],
+    "universal_url": "https://gateio.onelink.me/DmA6/web3"
   }
 ]
