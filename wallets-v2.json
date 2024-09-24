@@ -245,7 +245,7 @@
         "url": "https://wallet.binance.com/tonbridge/bridge"
       }
     ],
-    "platforms":   ["chrome", "safari", "ios", "android"],
+    "platforms":  ["ios", "android", "macos", "windows", "linux"],
     "universal_url": "https://app.binance.com/cedefi/ton-connect"
   }
 ]
