@@ -284,5 +284,19 @@
     ],
     "platforms":  ["ios", "android", "macos", "windows", "linux"],
     "universal_url": "https://app.binance.com/cedefi/ton-connect"
+  },
+  {
+    "app_name": "uxuyWallet",
+    "name": "UXUY Wallet",
+    "image": "https://raw.githubusercontent.com/uxuycom/uxuy-docsite/main/static/assets/UXUYWallet-logo/UXUYWallet_logo_circle.svg",
+    "about_url": "https://docs.uxuy.com",
+    "universal_url": "https://t.me/UXUYbot/app",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://bridge.tonapi.io/bridge"
+      }
+    ],
+    "platforms": ["ios", "android", "macos", "windows", "linux"]
   }
 ]
