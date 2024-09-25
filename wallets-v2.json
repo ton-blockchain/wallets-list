@@ -284,5 +284,24 @@
     ],
     "platforms":  ["ios", "android", "macos", "windows", "linux"],
     "universal_url": "https://app.binance.com/cedefi/ton-connect"
+  },
+  {
+    "app_name": "cdcTonWallet",
+    "name": "Crypto.com DeFi Wallet",
+    "image": "https://apro-ncw-api-file.crypto.com/wallet/logo.png",
+    "about_url": "https://crypto.com/defi-wallet",
+    "universal_url": "https://wallet.crypto.com/deeplink/ton-connect",
+    "deepLink": "dfw://",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "cdcTonWallet"
+      },
+      {
+        "type": "sse",
+        "url": "https://wallet.crypto.com/sse/tonbridge"
+      }
+    ],
+    "platforms": ["ios", "android", "chrome"]
   }
 ]
