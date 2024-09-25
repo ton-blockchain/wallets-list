@@ -143,7 +143,7 @@
       },
       {
         "type": "sse",
-        "url": "https://bridge.tonapi.io/bridge"
+        "url": "https://ton-connect-bridge.bgwapi.io/bridge"
       }
     ],
     "platforms": ["ios", "android", "chrome"],
@@ -228,6 +228,62 @@
       }
     ],
     "platforms": ["ios", "android", "macos", "windows", "linux"]
+  },
+  {
+    "app_name": "bybitTonWallet",
+    "name": "Bybit Wallet",
+    "image": "https://s1.bycsi.com/bybit/deadpool/image-ac5bf003d25c4ae0bd21f3725694a850.png",
+    "about_url": "https://www.bybit.com/web3",
+    "universal_url": "https://app.bybit.com/ton-connect",
+    "deepLink": "bybitapp://",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "bybitTonWallet"
+      },
+      {
+        "type": "sse",
+        "url": "https://api-node.bybit.com/spot/api/web3/bridge/ton/bridge"
+      }
+    ],
+    "platforms": ["ios", "android", "chrome"]
+  },
+  {
+    "app_name": "GateWallet",
+    "name": "GateWallet",
+    "image": "https://prd-web-imgs.s3.ap-northeast-1.amazonaws.com/prd-ordinal-imgs/0192a45e72abbdfb/gateIo.png",
+    "about_url": "https://www.gate.io/",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "gatetonwallet"
+      },
+      {
+        "type": "sse",
+        "url": "https://dapp.gateio.services/tonbridge_api/bridge/v1"
+      }
+    ],
+    "platforms": ["ios", "android"],
+    "universal_url": "https://gateio.onelink.me/DmA6/web3"
+  },
+  {
+    "app_name": "binanceWeb3TonWallet",
+    "name": "Binance Web3 Wallet",
+    "image": "https://public.bnbstatic.com/static/binance-w3w/ton-provider/binancew3w.png",
+    "about_url": "https://www.binance.com/en/web3wallet",
+    "deepLink": "bnc://app.binance.com/cedefi/ton-connect",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "binancew3w"
+      },
+      {
+        "type": "sse",
+        "url": "https://wallet.binance.com/tonbridge/bridge"
+      }
+    ],
+    "platforms":  ["ios", "android", "macos", "windows", "linux"],
+    "universal_url": "https://app.binance.com/cedefi/ton-connect"
   },
   {
     "app_name": "hpyTonWallet",
