@@ -284,5 +284,18 @@
     ],
     "platforms":  ["ios", "android", "macos", "windows", "linux"],
     "universal_url": "https://app.binance.com/cedefi/ton-connect"
+  },
+  {
+    "app_name": "YepWallet",
+    "name": "YepWallet",
+    "image": "https://yep-wallet.github.io/public/logo-288.png",
+    "about_url": "https://yellowplane.xyz/",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "yepwallet"
+      }
+    ],
+    "platforms": ["chrome"]
   }
 ]
