@@ -284,5 +284,18 @@
     ],
     "platforms":  ["ios", "android", "macos", "windows", "linux"],
     "universal_url": "https://app.binance.com/cedefi/ton-connect"
+  },
+  {
+    "app_name": "onekey",
+    "name": "OneKey",
+    "image": "https://common.onekey-asset.com/logo/onekey-x288.png",
+    "about_url": "https://onekey.so",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "onekeyTonWallet"
+      }
+    ],
+    "platforms": ["chrome"]
   }
 ]
