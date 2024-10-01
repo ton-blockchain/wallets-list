@@ -169,6 +169,20 @@
   ],
   "platforms": ["ios", "android", "chrome", "firefox"]
  },
+ {
+  "app_name": "WebViewJavascriptBridge",
+  "name": "Ave.ai",
+  "image": "https://ave.ai/static/img/avedex_mobile_logo.d923452b.png",
+  "about_url": "https://ave.ai/",
+  "deepLink": "ave://",
+  "bridge": [
+     {
+        "type": "js",
+        "key": "WebViewJavascriptBridge"
+     }
+  ],
+  "platforms": ["android"]
+ },
   {
     "app_name": "okxTonWallet",
     "name": "OKX Wallet",
