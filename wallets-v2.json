@@ -284,16 +284,11 @@
     "name": "Trust",
     "image": "https://assets-cdn.trustwallet.com/dapps/trust.logo.png",
     "about_url": "https://trustwallet.com/about-us",
-    "universal_url": "https://link.trustwallet.com/ton-connect",
     "deepLink": "trust://ton-connect",
     "bridge": [
       {
         "type": "js",
         "key": "trustwalletTon"
-      },
-      {
-        "type": "sse",
-        "url": "https://tonconnect.trustwallet.com/bridge"
       }
     ],
     "platforms": ["chrome", "ios", "android"]
