@@ -284,6 +284,7 @@
     "name": "Trust",
     "image": "https://assets-cdn.trustwallet.com/dapps/trust.logo.png",
     "about_url": "https://trustwallet.com/about-us",
+    "deepLink": "trust://ton-connect",
     "bridge": [
       {
         "type": "js",
