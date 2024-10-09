@@ -249,12 +249,49 @@
     "platforms": ["ios", "android", "chrome"]
   },
   {
+    "app_name": "GateWallet",
+    "name": "GateWallet",
+    "image": "https://img.gatedataimg.com/prd-ordinal-imgs/036f07bb8730716e/gateio-0925.png",
+    "about_url": "https://www.gate.io/",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "gatetonwallet"
+      },
+      {
+        "type": "sse",
+        "url": "https://dapp.gateio.services/tonbridge_api/bridge/v1"
+      }
+    ],
+    "platforms": ["ios", "android"],
+    "universal_url": "https://gateio.onelink.me/DmA6/web3"
+  },
+  {
+    "app_name": "binanceWeb3TonWallet",
+    "name": "Binance Web3 Wallet",
+    "image": "https://public.bnbstatic.com/static/binance-w3w/ton-provider/binancew3w.png",
+    "about_url": "https://www.binance.com/en/web3wallet",
+    "deepLink": "bnc://app.binance.com/cedefi/ton-connect",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "binancew3w"
+      },
+      {
+        "type": "sse",
+        "url": "https://wallet.binance.com/tonbridge/bridge"
+      }
+    ],
+    "platforms":  ["ios", "android", "macos", "windows", "linux"],
+    "universal_url": "https://app.binance.com/cedefi/ton-connect"
+  },
+  {
     "app_name": "ONTO",
     "name": "ONTO",
     "image": "https://app.ont.io/ontoMsgPic/onto.png",
     "tondns": "onto.app",
     "about_url": "https://onto.app",
-    "universal_url": "https://onto.app/ton-connect",
+    "universal_url": "https://link.onto.app/ton-connect",
     "bridge": [
     {
         "type": "js",
