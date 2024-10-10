@@ -284,5 +284,21 @@
     ],
     "platforms":  ["ios", "android", "macos", "windows", "linux"],
     "universal_url": "https://app.binance.com/cedefi/ton-connect"
+  },
+  {
+    "app_name": "foxwallet",
+    "name": "FoxWallet",
+    "image": "https://hc.foxwallet.com/img/logo.png",
+    "about_url": "https://foxwallet.com/",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "foxwallet"
+      }
+    ],
+    "platforms": [
+      "ios",
+      "android"
+    ]
   }
 ]
