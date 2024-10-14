@@ -284,5 +284,24 @@
     ],
     "platforms":  ["ios", "android", "macos", "windows", "linux"],
     "universal_url": "https://app.binance.com/cedefi/ton-connect"
+  },
+  {
+    "app_name": "jambo",
+    "name": "Jambo",
+    "image": "https://cdn-prod.jambotechnology.xyz/content/jambo_288x288_02da416a6c.png",
+    "about_url": "https://www.jambo.technology/",
+    "deepLink": "tonconnect://",
+    "universal_url": "https://jamboapp.com/tonconnect",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "jambo"
+      },
+      {
+        "type": "sse",
+        "url": "https://api.jambotechnology.xyz/bridge/"
+      }
+    ],
+    "platforms": ["android"]
   }
 ]
