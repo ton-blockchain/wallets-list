@@ -299,7 +299,7 @@
       },
       {
         "type": "js",
-        "key": "miraiwallet"
+        "key": "miraiapp"
       }
     ],
     "platforms": ["ios", "android", "chrome", "firefox"]
