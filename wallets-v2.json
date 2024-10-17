@@ -212,20 +212,6 @@
     ]
   },
   {
-    "app_name": "fintopio-tg",
-    "name": "Fintopio Telegram",
-    "image": "https://fintopio.com/tonconnect-icon.png",
-    "about_url": "https://fintopio.com",
-    "universal_url": "https://t.me/fintopio?attach=wallet",
-    "bridge": [
-      {
-        "type": "sse",
-        "url": "https://wallet-bridge.fintopio.com/bridge"
-      }
-    ],
-    "platforms": ["ios", "android", "macos", "windows", "linux"]
-  },
-  {
     "app_name": "hot",
     "name": "HOT",
     "image": "https://raw.githubusercontent.com/hot-dao/media/main/logo.png",
@@ -298,5 +284,19 @@
     ],
     "platforms":  ["ios", "android", "macos", "windows", "linux"],
     "universal_url": "https://app.binance.com/cedefi/ton-connect"
+  },
+    {
+    "app_name": "fintopio-tg",
+    "name": "Fintopio Telegram",
+    "image": "https://fintopio.com/tonconnect-icon.png",
+    "about_url": "https://fintopio.com",
+    "universal_url": "https://t.me/fintopio?attach=wallet",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://wallet-bridge.fintopio.com/bridge"
+      }
+    ],
+    "platforms": ["ios", "android", "macos", "windows", "linux"]
   }
 ]
