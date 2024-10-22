@@ -285,7 +285,7 @@
     "platforms":  ["ios", "android", "macos", "windows", "linux"],
     "universal_url": "https://app.binance.com/cedefi/ton-connect"
   },
-    {
+  {
     "app_name": "fintopio-tg",
     "name": "Fintopio",
     "image": "https://fintopio.com/tonconnect-icon.png",
@@ -298,5 +298,23 @@
       }
     ],
     "platforms": ["ios", "android", "macos", "windows", "linux"]
-  }
+  },
+  {
+    "app_name": "hpyTonWallet",
+    "name": "HyperPay Wallet",
+    "image": "https://hyperpay-website.oss-cn-hongkong.aliyuncs.com/static/dist/images/2022-12-30/logo.png",
+    "about_url": "https://www.hyperpay.tech",
+    "universal_url": "https://www.hyperpay.tech/download&deeplink=hyperpay://web3/wallet/tonconnect",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "hpyTonWallet"
+      },
+      {
+        "type": "sse",
+        "url": "https://bridge.tonapi.io/bridge"
+      }
+    ],
+    "platforms": ["ios", "android"]
+   }
 ]
