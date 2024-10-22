@@ -296,10 +296,10 @@
         "type": "sse",
         "url": "https://bridge.tonapi.io/bridge"
      }
-      ],
-      "platforms": ["ios", "android", "macos", "windows", "linux"]
-    },
-    {
+    ],
+    "platforms": ["ios", "android", "macos", "windows", "linux"]
+  },
+  {
     "app_name": "fintopio-tg",
     "name": "Fintopio Telegram",
     "image": "https://fintopio.com/tonconnect-icon.png",
