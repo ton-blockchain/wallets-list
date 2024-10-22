@@ -169,7 +169,7 @@
   ],
   "platforms": ["ios", "android", "chrome", "firefox"]
  },
-  {
+ {
     "app_name": "okxTonWallet",
     "name": "OKX Wallet",
     "image": "https://static.okx.com/cdn/assets/imgs/247/58E63FEA47A2B7D7.png",
@@ -284,6 +284,20 @@
     ],
     "platforms":  ["ios", "android", "macos", "windows", "linux"],
     "universal_url": "https://app.binance.com/cedefi/ton-connect"
+  },
+    {
+    "app_name": "fintopio-tg",
+    "name": "Fintopio Telegram",
+    "image": "https://fintopio.com/tonconnect-icon.png",
+    "about_url": "https://fintopio.com",
+    "universal_url": "https://t.me/fintopio?attach=wallet",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://wallet-bridge.fintopio.com/bridge"
+      }
+    ],
+    "platforms": ["ios", "android", "macos", "windows", "linux"]
   },
   {
     "app_name": "coin98",
