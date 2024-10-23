@@ -170,7 +170,9 @@
   "platforms": ["ios", "android", "chrome", "firefox"]
  },
 
+
   {
+
     "app_name": "okxTonWallet",
     "name": "OKX Wallet",
     "image": "https://static.okx.com/cdn/assets/imgs/247/58E63FEA47A2B7D7.png",
@@ -253,7 +255,7 @@
   {
     "app_name": "GateWallet",
     "name": "GateWallet",
-    "image": "https://prd-web-imgs.s3.ap-northeast-1.amazonaws.com/prd-ordinal-imgs/0192a45e72abbdfb/gateIo.png",
+    "image": "https://img.gatedataimg.com/prd-ordinal-imgs/036f07bb8730716e/gateio-0925.png",
     "about_url": "https://www.gate.io/",
     "bridge": [
       {
@@ -267,6 +269,39 @@
     ],
     "platforms": ["ios", "android"],
     "universal_url": "https://gateio.onelink.me/DmA6/web3"
+  },
+  {
+    "app_name": "binanceWeb3TonWallet",
+    "name": "Binance Web3 Wallet",
+    "image": "https://public.bnbstatic.com/static/binance-w3w/ton-provider/binancew3w.png",
+    "about_url": "https://www.binance.com/en/web3wallet",
+    "deepLink": "bnc://app.binance.com/cedefi/ton-connect",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "binancew3w"
+      },
+      {
+        "type": "sse",
+        "url": "https://wallet.binance.com/tonbridge/bridge"
+      }
+    ],
+    "platforms":  ["ios", "android", "macos", "windows", "linux"],
+    "universal_url": "https://app.binance.com/cedefi/ton-connect"
+  },
+    {
+    "app_name": "fintopio-tg",
+    "name": "Fintopio",
+    "image": "https://fintopio.com/tonconnect-icon.png",
+    "about_url": "https://fintopio.com",
+    "universal_url": "https://t.me/fintopio?attach=wallet",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://wallet-bridge.fintopio.com/bridge"
+      }
+    ],
+    "platforms": ["ios", "android", "macos", "windows", "linux"]
   }
 
  ,{
