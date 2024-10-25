@@ -298,5 +298,19 @@
       }
     ],
     "platforms": ["ios", "android", "macos", "windows", "linux"]
+  },
+  {
+    "app_name": "miraiapp-tg",
+    "name": "Mirai Telegram App",
+    "image": "https://cdn.mirailabs.co/miraihub/miraiapp-icon-288.png",
+    "about_url": "https://mirai.app",
+    "universal_url": "https://t.me/MiraiAppBot/app",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://bridge.tonapi.io/bridge"
+     }
+    ],
+    "platforms": ["ios", "android", "macos", "windows", "linux"]
   }
 ]
