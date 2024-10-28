@@ -305,15 +305,15 @@
     "image": "https://cdn-prod.jambotechnology.xyz/content/jambo_288x288_02da416a6c.png",
     "about_url": "https://www.jambo.technology/",
     "deepLink": "jambotc://",
-    "universal_url": "https://jamboapp.com/tonconnect",
+    "universal_url": "https://jambophone.xyz/",
     "bridge": [
       {
         "type": "js",
-        "key": "jambo"
+        "key": "jambowallet"
       },
       {
         "type": "sse",
-        "url": "https://api.jambotechnology.xyz/bridge/"
+        "url": "https://bridge.tonapi.io/bridge"
       }
     ],
     "platforms": ["android"]
