@@ -135,7 +135,7 @@
     "name": "Bitget Wallet Lite",
     "image": "https://raw.githubusercontent.com/bitgetwallet/download/main/logo/png/bitget_wallet_lite_logo.png",
     "about_url": "https://web3.bitget.com",
-    "universal_url": "https://t.me/BitgetWallet_TGBot/BGW",
+    "universal_url": "https://t.me/BitgetWallet_TGBot?attach=wallet",
     "bridge": [
       {
         "type": "sse",
