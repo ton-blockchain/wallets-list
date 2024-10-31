@@ -298,5 +298,24 @@
       }
     ],
     "platforms": ["ios", "android", "macos", "windows", "linux"]
+  },
+  {
+    "app_name": "bybitGlobalTonWallet",
+    "name": "Bybit global Wallet",
+    "image": "https://s1.bycsi.com/bybit/deadpool/image-d9bd56ae957f42f496a382da18fa7dee.png",
+    "about_url": "https://www.bybitglobal.com/web3",
+    "universal_url": "https://app.bybitglobal.com/ton-connect",
+    "deepLink": "bybitapp://",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "bybitTonWallet"
+      },
+      {
+        "type": "sse",
+        "url": "https://api-node.bybitglobal.com/spot/api/web3/bridge/ton/bridge"
+      }
+    ],
+    "platforms": ["ios", "android", "chrome"]
   }
 ]
