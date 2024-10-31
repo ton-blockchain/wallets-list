@@ -298,5 +298,21 @@
       }
     ],
     "platforms": ["ios", "android", "macos", "windows", "linux"]
+  },
+  ,
+  {
+    "app_name": "naboxTonWallet",
+    "name": "Nabox Wallet",
+    "image": "https://files.nabox.io/icon/Nabox288.png",
+    "about_url": "https://nabox.io",
+    "deepLink": "nabox://",
+    "universal_url": "https://nabox.io",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "naboxTon"
+      }
+    ],
+    "platforms": ["ios", "android", "windows", "chrome", "macos"]
   }
 ]
