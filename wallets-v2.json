@@ -169,7 +169,10 @@
   ],
   "platforms": ["ios", "android", "chrome", "firefox"]
  },
- {
+
+
+  {
+
     "app_name": "okxTonWallet",
     "name": "OKX Wallet",
     "image": "https://static.okx.com/cdn/assets/imgs/247/58E63FEA47A2B7D7.png",
@@ -219,6 +222,7 @@
     ],
     "platforms": ["ios", "android", "macos", "windows", "linux"]
   },
+
   {
     "app_name": "bybitTonWallet",
     "name": "Bybit Wallet",
@@ -289,4 +293,27 @@
     ],
     "platforms": ["ios", "android", "macos", "windows", "linux"]
   }
+
+ ,{
+    "app_name": "mathwallet",
+    "name": "MathWallet",
+    "image": "https://avatars.githubusercontent.com/u/49776094?s=200&v=4",
+    "about_url": "https://mathwallet.org",
+    "universal_url": "https://mathwallet.org",
+    "deepLink": "mathwallet://",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "tonmathwallet"
+      },
+
+      {
+        "type": "sse",
+        "url": "https://bridge.tonapi.io/bridge"
+      }
+    ],
+    "platforms": ["ios", "android"]
+   }
+
 ]
+
