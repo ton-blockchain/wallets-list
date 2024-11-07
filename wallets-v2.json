@@ -294,7 +294,7 @@
     "name": "Tobi",
     "image": "https://app.tobiwallet.app/icons/logo.png",
     "about_url": "https://tobi.fun",
-    "universal_url": "https://t.me/TobiCopilotBot/wallet?attach=wallet",
+    "universal_url": "https://t.me/TobiCopilotBot?attach=wallet",
     "bridge": [
       {
         "type": "sse",
