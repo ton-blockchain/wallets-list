@@ -288,5 +288,19 @@
       }
     ],
     "platforms": ["ios", "android", "macos", "windows", "linux"]
-  }
+  },
+  {
+  "app_name": "Gate.io wallet",
+  "name": "Gate.io wallet",
+  "image": "https://gimg2.gateimg.com/tgwallet/1730688473495507406-Gatewallet.png",
+  "about_url": "https://www.gate.io",
+  "universal_url": "https://www.gate.io/tgwallet", 
+  "bridge": [ 
+     {
+        "type": "sse",
+        "url": "https://bridge.tonapi.io/bridge"
+     }
+  ],
+  "platforms": ["ios", "android", "chrome", "firefox", "safari", "windows", "macos", "linux"]
+}
 ]
