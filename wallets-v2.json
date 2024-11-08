@@ -275,7 +275,7 @@
     "platforms":  ["ios", "android", "macos", "windows", "linux"],
     "universal_url": "https://app.binance.com/cedefi/ton-connect"
   },
-    {
+  {
     "app_name": "fintopio-tg",
     "name": "Fintopio",
     "image": "https://fintopio.com/tonconnect-icon.png",
@@ -288,5 +288,24 @@
       }
     ],
     "platforms": ["ios", "android", "macos", "windows", "linux"]
+  },
+  {
+    "app_name": "jambo",
+    "name": "Jambo",
+    "image": "https://cdn-prod.jambotechnology.xyz/content/jambo_288x288_02da416a6c.png",
+    "about_url": "https://www.jambo.technology/",
+    "deepLink": "jambotc://",
+    "universal_url": "https://jambophone.xyz/",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "jambowallet"
+      },
+      {
+        "type": "sse",
+        "url": "https://bridge.tonapi.io/bridge"
+      }
+    ],
+    "platforms": ["android"]
   }
 ]
