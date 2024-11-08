@@ -294,11 +294,11 @@
   "name": "Gate.io wallet",
   "image": "https://gimg2.gateimg.com/tgwallet/1730688473495507406-Gatewallet.png",
   "about_url": "https://www.gate.io",
-  "universal_url": "https://www.gate.io/tgwallet", 
+  "universal_url": "https://t.me/gateio_wallet_bot/miniapp", 
   "bridge": [ 
      {
         "type": "sse",
-        "url": "https://bridge.tonapi.io/bridge"
+        "url": "https://dapp.gateio.services/tonbridge_api/bridge/v1"
      }
   ],
   "platforms": ["ios", "android", "chrome", "firefox", "safari", "windows", "macos", "linux"]
