@@ -220,6 +220,25 @@
     "platforms": ["ios", "android", "macos", "windows", "linux"]
   },
   {
+    "app_name": "bybitTonWallet",
+    "name": "Bybit Wallet",
+    "image": "https://raw.githubusercontent.com/bybit-web3/bybit-web3.github.io/main/docs/images/bybit-logo.png",
+    "about_url": "https://www.bybit.com/web3",
+    "universal_url": "https://app.bybit.com/ton-connect",
+    "deepLink": "bybitapp://",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "bybitTonWallet"
+      },
+      {
+        "type": "sse",
+        "url": "https://api-node.bybit.com/spot/api/web3/bridge/ton/bridge"
+      }
+    ],
+    "platforms": ["ios", "android", "chrome"]
+  },
+  {
     "app_name": "GateWallet",
     "name": "GateWallet",
     "image": "https://img.gatedataimg.com/prd-ordinal-imgs/036f07bb8730716e/gateio-0925.png",
