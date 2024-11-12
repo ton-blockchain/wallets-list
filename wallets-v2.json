@@ -139,7 +139,7 @@
     "bridge": [
       {
         "type": "js",
-        "key": "bitgetTonWallet"
+        "key": "bitkeep"
       },
       {
         "type": "sse",
