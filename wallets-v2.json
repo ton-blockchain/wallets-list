@@ -253,7 +253,7 @@
     "name": "Tomo Wallet",
     "image": "https://pub.tomo.inc/logo.png",
     "about_url": "https://www.tomo.inc/",
-    "universal_url": "https://t.me/tomowalletbot/tomo_wallet_app",
+    "universal_url": "https://t.me/tomowalletbot?attach=wallet",
     "bridge": [
       {
         "type": "sse",
