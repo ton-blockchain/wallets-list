@@ -4,7 +4,7 @@
     "name": "Wallet",
     "image": "https://wallet.tg/images/logo-288.png",
     "about_url": "https://wallet.tg/",
-    "universal_url": "https://t.me/wallet?attach=wallet&mode=compact",
+    "universal_url": "https://t.me/wallet?attach=wallet",
     "bridge": [
       {
         "type": "sse",
