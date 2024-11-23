@@ -306,7 +306,7 @@
   {
     "app_name": "tobi",
     "name": "Tobi",
-    "image": "https://app.tobiwallet.app/icons/logo.png",
+    "image": "https://app.tobiwallet.app/icons/logo-288.png",
     "about_url": "https://tobi.fun",
     "universal_url": "https://t.me/TobiCopilotBot?attach=wallet",
     "bridge": [
