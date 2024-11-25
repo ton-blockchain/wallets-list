@@ -302,5 +302,19 @@
       }
     ],
     "platforms": ["ios", "android", "windows", "macos", "linux"]
+  },
+  {
+    "app_name": "unstoppable",
+    "name": "Unstoppable Wallet",
+    "image": "https://unstoppable.money/logo288.png",
+    "about_url": "https://unstoppable.money/",
+    "universal_url": "https://unstoppable.money/ton-connect.html",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://bridge.unstoppable.money/bridge"
+      }
+    ],
+    "platforms": ["ios", "android"]
   }
 ]
