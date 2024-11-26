@@ -4,11 +4,11 @@
     "name": "Wallet",
     "image": "https://wallet.tg/images/logo-288.png",
     "about_url": "https://wallet.tg/",
-    "universal_url": "https://t.me/wallet?attach=wallet&mode=compact",
+    "universal_url": "https://t.me/wallet?attach=wallet",
     "bridge": [
       {
         "type": "sse",
-        "url": "https://bridge.ton.space/bridge"
+        "url": "https://walletbot.me/tonconnect-bridge/bridge"
       }
     ],
     "platforms": ["ios", "android", "macos", "windows", "linux"]
@@ -302,6 +302,26 @@
       }
     ],
     "platforms": ["ios", "android", "windows", "macos", "linux"]
+  },
+  {
+    "app_name": "tobi",
+    "name": "Tobi",
+    "image": "https://app.tobiwallet.app/icons/logo-288.png",
+    "about_url": "https://tobi.fun",
+    "universal_url": "https://t.me/TobiCopilotBot?attach=wallet",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://ton-bridge.tobiwallet.app/bridge"
+      }
+    ],
+    "platforms": [
+      "ios",
+      "android",
+      "macos",
+      "windows",
+      "linux"
+    ]
   },
   {
     "app_name": "tonflow",
