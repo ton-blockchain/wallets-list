@@ -308,7 +308,7 @@
     "name": "Unstoppable Wallet",
     "image": "https://unstoppable.money/logo288.png",
     "about_url": "https://unstoppable.money/",
-    "universal_url": "https://unstoppable.money/ton-connect.html",
+    "universal_url": "https://unstoppable.money/ton-connect",
     "bridge": [
       {
         "type": "sse",
