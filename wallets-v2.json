@@ -328,7 +328,7 @@
     "name": "Mirai App",
     "image": "https://cdn.mirailabs.co/miraihub/miraiapp-tg-icon-288.png",
     "about_url": "https://mirai.app",
-    "universal_url": "https://t.me/MiraiAppBot/app",
+    "universal_url": "https://t.me/MiraiAppBot?attach=wallet",
     "bridge": [
       {
         "type": "sse",
