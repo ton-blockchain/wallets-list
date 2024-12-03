@@ -322,5 +322,19 @@
       "windows",
       "linux"
     ]
+  },
+  {
+    "app_name": "miraiapp-tg",
+    "name": "Mirai App",
+    "image": "https://cdn.mirailabs.co/miraihub/miraiapp-tg-icon-288.png",
+    "about_url": "https://mirai.app",
+    "universal_url": "https://t.me/MiraiAppBot?attach=wallet",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://bridge.tonapi.io/bridge"
+     }
+    ],
+    "platforms": ["ios", "android", "macos", "windows", "linux"]
   }
 ]
