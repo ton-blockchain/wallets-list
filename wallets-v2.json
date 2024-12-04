@@ -79,20 +79,6 @@
     "universal_url": "https://bkcode.vip/ton-connect"
   },
   {
-    "app_name": "bitgetWalletLite",
-    "name": "Bitget Wallet Lite",
-    "image": "https://raw.githubusercontent.com/bitgetwallet/download/refs/heads/main/logo/png/bitget_wallet_lite_logo_288.png",
-    "about_url": "https://web3.bitget.com",
-    "universal_url": "https://t.me/BitgetWallet_TGBot?attach=wallet",
-    "bridge": [
-      {
-        "type": "sse",
-        "url": "https://ton-connect-bridge.bgwapi.io/bridge"
-      }
-    ],
-    "platforms": ["ios", "android", "macos", "windows", "linux"]
-  },
-  {
     "app_name": "binanceWeb3TonWallet",
     "name": "Binance Web3 Wallet",
     "image": "https://public.bnbstatic.com/static/binance-w3w/ton-provider/binancew3w.png",
@@ -336,5 +322,19 @@
       "windows",
       "linux"
     ]
+  },
+  {
+    "app_name": "bitgetWalletLite",
+    "name": "Bitget Wallet Lite",
+    "image": "https://raw.githubusercontent.com/bitgetwallet/download/refs/heads/main/logo/png/bitget_wallet_lite_logo_288.png",
+    "about_url": "https://web3.bitget.com",
+    "universal_url": "https://t.me/BitgetWallet_TGBot?attach=wallet",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://ton-connect-bridge.bgwapi.io/bridge"
+      }
+    ],
+    "platforms": ["ios", "android", "macos", "windows", "linux"]
   }
 ]
