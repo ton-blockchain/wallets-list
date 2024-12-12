@@ -336,7 +336,7 @@
       },
       {
         "type": "sse",
-        "url": "https://connect.foxwallet.com/ton/bridge/bridge"
+        "url": "https://connect.foxwallet.com/ton/bridge"
       }
     ],
     "platforms": [
