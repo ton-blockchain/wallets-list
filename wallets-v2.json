@@ -322,5 +322,26 @@
       }
     ],
     "platforms": ["chrome"]
+  },
+  {
+    "app_name": "foxwallet",
+    "name": "FoxWallet",
+    "image": "https://hc.foxwallet.com/img/logo.png",
+    "about_url": "https://foxwallet.com/",
+    "universal_url": "https://link.foxwallet.com/tc",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "foxwallet"
+      },
+      {
+        "type": "sse",
+        "url": "https://connect.foxwallet.com/ton/bridge"
+      }
+    ],
+    "platforms": [
+      "ios",
+      "android"
+    ]
   }
 ]
