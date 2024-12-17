@@ -322,5 +322,19 @@
       }
     ],
     "platforms": ["chrome"]
+  },
+  {
+    "app_name": "architec.ton",
+    "name": "Architec.ton",
+    "image": "https://raw.githubusercontent.com/Architec-Ton/wallet-tma/refs/heads/dev/public/images/arcwallet_logo.png",
+    "about_url": "https://architecton.tech",
+    "universal_url": "https://t.me/architec_ton_bot/wallet",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://tonconnect.architecton.site/bridge"
+      }
+    ],
+    "platforms": ["ios", "android", "macos", "windows", "linux"]
   }
 ]
