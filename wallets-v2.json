@@ -335,6 +335,6 @@
         "url": "https://bridge.unstoppable.money/bridge"
       }
     ],
-    "platforms": ["ios", "android"]
+    "platforms": ["ios", "android", "windows", "macos", "linux"]
   }
 ]
