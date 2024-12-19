@@ -322,5 +322,18 @@
       }
     ],
     "platforms": ["chrome"]
+  },
+  {
+    "app_name": "coin98wallet",
+    "name": "Coin98",
+    "image": "https://coin98.s3.ap-southeast-1.amazonaws.com/Logo/c982024.png",
+    "about_url": "https://chromewebstore.google.com/detail/coin98-wallet/aeachknmefphepccionboohckonoeemg",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "coin98"
+      }
+    ],
+    "platforms": ["chrome", "firefox", "android", "ios"]
   }
 ]
