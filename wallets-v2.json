@@ -1,4 +1,4 @@
-[
+tab[
   {
     "app_name": "telegram-wallet",
     "name": "Wallet",
@@ -13,7 +13,7 @@
     ],
     "platforms": ["ios", "android", "macos", "windows", "linux"]
   },
-  {
+  esc{
     "app_name": "tonkeeper",
     "name": "Tonkeeper",
     "image": "https://tonkeeper.com/assets/tonconnect-icon.png",
@@ -59,7 +59,7 @@
       "firefox"
     ]
   },
-  {
+  tab{
     "app_name": "tonhub",
     "name": "Tonhub",
     "image": "https://tonhub.com/tonconnect_logo.png",
