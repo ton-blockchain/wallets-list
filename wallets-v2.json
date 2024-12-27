@@ -259,7 +259,7 @@
     "bridge": [
       {
         "type": "sse",
-        "url": "https://bridge.tonapi.io/bridge"
+        "url": "https://bridge.uxuy.me/bridge"
      }
     ],
     "platforms": ["ios", "android", "macos", "windows", "linux"]
