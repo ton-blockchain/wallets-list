@@ -251,6 +251,20 @@
     "universal_url": "https://gateio.go.link/gateio/web3?adj_t=1ff8khdw_1fu4ccc7"
   },
   {
+    "app_name": "uxuyWallet",
+    "name": "UXUY Wallet",
+    "image": "https://raw.githubusercontent.com/uxuycom/uxuy-docsite/main/static/assets/UXUYWallet-logo/UXUYWallet_logo_circle.svg",
+    "about_url": "https://docs.uxuy.com",
+    "universal_url": "https://t.me/UXUYbot/app",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://bridge.uxuy.me/bridge"
+     }
+    ],
+    "platforms": ["ios", "android", "macos", "windows", "linux"]
+  },
+  {
     "app_name": "openmask",
     "name": "OpenMask",
     "image": "https://raw.githubusercontent.com/OpenProduct/openmask-extension/main/public/openmask-logo-288.png",
