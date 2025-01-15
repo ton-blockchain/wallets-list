@@ -324,15 +324,15 @@
     "platforms": ["chrome"]
   },
   {
-    "app_name": "architec.ton",
-    "name": "Architec.ton",
-    "image": "https://raw.githubusercontent.com/Architec-Ton/wallet-tma/refs/heads/dev/public/images/arcwallet_logo.png",
-    "about_url": "https://architecton.tech",
-    "universal_url": "https://t.me/architec_ton_bot/wallet",
+    "app_name": "bitgetWalletLite",
+    "name": "Bitget Wallet Lite",
+    "image": "https://raw.githubusercontent.com/bitgetwallet/download/refs/heads/main/logo/png/bitget_wallet_lite_logo_288.png",
+    "about_url": "https://web3.bitget.com",
+    "universal_url": "https://t.me/BitgetWallet_TGBot?attach=wallet",
     "bridge": [
       {
         "type": "sse",
-        "url": "https://tonconnect.architecton.site/bridge"
+        "url": "https://ton-connect-bridge.bgwapi.io/bridge"
       }
     ],
     "platforms": ["ios", "android", "macos", "windows", "linux"]
