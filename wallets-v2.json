@@ -324,6 +324,20 @@
     "platforms": ["chrome"]
   },
   {
+    "app_name": "bitgetWalletLite",
+    "name": "Bitget Wallet Lite",
+    "image": "https://raw.githubusercontent.com/bitgetwallet/download/refs/heads/main/logo/png/bitget_wallet_lite_logo_288.png",
+    "about_url": "https://web3.bitget.com",
+    "universal_url": "https://t.me/BitgetWallet_TGBot?attach=wallet",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://ton-connect-bridge.bgwapi.io/bridge"
+      }
+    ],
+    "platforms": ["ios", "android", "macos", "windows", "linux"]
+  },
+  {
     "app_name": "bybitMiniWallet",
     "name": "Bybit Mini Wallet",
      "image": "https://raw.githubusercontent.com/bybit-web3/bybit-web3.github.io/main/docs/images/bybit-logo.png",
