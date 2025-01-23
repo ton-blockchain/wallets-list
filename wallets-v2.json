@@ -342,7 +342,7 @@
     "name": "Bybit Mini Wallet",
      "image": "https://raw.githubusercontent.com/bybit-web3/bybit-web3.github.io/main/docs/images/bybit-logo.png",
     "about_url": "https://www.bybit.com/web3",
-    "universal_url": "https://t.me/Bybit_Web3_wallet_bot/wallet?attach=wallet",
+    "universal_url": "https://t.me/Bybit_Web3_wallet_bot?attach=wallet",
     "bridge": [
       {
         "type": "sse",
