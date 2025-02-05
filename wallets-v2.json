@@ -338,6 +338,20 @@
     "platforms": ["ios", "android", "macos", "windows", "linux"]
   },
   {
+    "app_name": "tomoWallet",
+    "name": "Tomo Wallet",
+    "image": "https://pub.tomo.inc/logo.png",
+    "about_url": "https://www.tomo.inc/",
+    "universal_url": "https://t.me/tomowalletbot?attach=wallet",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://go-bridge.tomo.inc/bridge"
+      }
+    ],
+    "platforms": ["ios", "android", "macos", "windows", "linux"]
+  },
+  {
     "app_name": "coin98",
     "name": "Coin98 ",
     "image": "https://coin98.s3.ap-southeast-1.amazonaws.com/SocialLogo/ninetyeight.png",
