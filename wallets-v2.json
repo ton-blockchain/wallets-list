@@ -255,7 +255,7 @@
     "name": "UXUY Wallet",
     "image": "https://raw.githubusercontent.com/uxuycom/uxuy-docsite/main/static/assets/UXUYWallet-logo/UXUYWallet_logo_circle.svg",
     "about_url": "https://docs.uxuy.com",
-    "universal_url": "https://t.me/UXUYbot/app",
+    "universal_url": "https://t.me/UXUYbot?attach=wallet",
     "bridge": [
       {
         "type": "sse",
