@@ -350,5 +350,23 @@
       }
     ],
     "platforms": ["ios", "android", "macos", "windows", "linux"]
-  }
+  },
+  {
+  "app_name": "walletverse",
+  "name": "Walletverse",
+  "image": "https://bridge.walletverse.io/logo.png",
+  "about_url": "https://walletverse.io",
+  "universal_url": "https://bridge.walletverse.io/tonconnect",
+  "bridge": [
+     {
+        "type": "sse",
+        "url": "https://bridge.walletverse.io/sse/bridge"
+     },
+     {
+        "type": "js",
+        "key": "walletverse"
+     }
+  ],
+  "platforms": ["ios", "android"]
+ }
 ]
