@@ -352,21 +352,21 @@
     "platforms": ["ios", "android", "macos", "windows", "linux"]
   },
   {
-      "app_name": "coin98",
-      "name": "Coin98 ",
-      "image": "https://coin98.s3.ap-southeast-1.amazonaws.com/SocialLogo/ninetyeight.png",
-      "about_url": "https://docs.coin98.com",
-      "deepLink": "coin98://ton-connect",
-      "bridge": [
-        {
-          "type": "sse",
-          "url": "https://https://ton-bridge.coin98.tech/bridge"
-        }
-      ],
-      "platforms": [
-        "ios",
-        "android"
-      ],
-      "universal_url": "https://coin98.com/ton-conect"
-    }
+    "app_name": "coin98",
+    "name": "Coin98 ",
+    "image": "https://coin98.s3.ap-southeast-1.amazonaws.com/SocialLogo/ninetyeight.png",
+    "about_url": "https://docs.coin98.com",
+    "deepLink": "coin98://ton-connect",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://ton-bridge.coin98.tech/bridge"
+      }
+    ],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "universal_url": "https://coin98.com/ton-connect"
+  }
 ]
