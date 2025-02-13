@@ -324,6 +324,34 @@
     "platforms": ["chrome"]
   },
   {
+    "app_name": "bitgetWalletLite",
+    "name": "Bitget Wallet Lite",
+    "image": "https://raw.githubusercontent.com/bitgetwallet/download/refs/heads/main/logo/png/bitget_wallet_lite_logo_288.png",
+    "about_url": "https://web3.bitget.com",
+    "universal_url": "https://t.me/BitgetWallet_TGBot?attach=wallet",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://ton-connect-bridge.bgwapi.io/bridge"
+      }
+    ],
+    "platforms": ["ios", "android", "macos", "windows", "linux"]
+  },
+  {
+    "app_name": "tomoWallet",
+    "name": "Tomo Wallet",
+    "image": "https://pub.tomo.inc/logo.png",
+    "about_url": "https://www.tomo.inc/",
+    "universal_url": "https://t.me/tomowalletbot?attach=wallet",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://go-bridge.tomo.inc/bridge"
+      }
+    ],
+    "platforms": ["ios", "android", "macos", "windows", "linux"]
+  },
+  {
     "app_name": "miraiapp-tg",
     "name": "Mirai App",
     "image": "https://cdn.mirailabs.co/miraihub/miraiapp-tg-icon-288.png",
@@ -332,7 +360,7 @@
     "bridge": [
       {
         "type": "sse",
-        "url": "https://bridge.tonapi.io/bridge"
+        "url": "https://bridge.mirai.app"
      }
     ],
     "platforms": ["ios", "android", "macos", "windows", "linux"]
