@@ -368,5 +368,19 @@
       "android"
     ],
     "universal_url": "https://coin98.com/ton-connect"
+  },
+  {
+    "app_name": "coin98TelegramWallet",
+    "name": "Coin98 Telegram Wallet",
+    "image": "https://coin98.s3.ap-southeast-1.amazonaws.com/SocialLogo/ninetyeight.png",
+    "about_url": "https://docs.coin98.com",
+    "universal_url": "https://t.me/Coin98_bot?attach=wallet",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://ton-bridge.coin98.tech/bridge"
+      }
+    ],
+    "platforms": ["ios", "android", "macos", "windows", "linux"]
   }
 ]
