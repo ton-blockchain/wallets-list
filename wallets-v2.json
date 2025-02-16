@@ -350,5 +350,21 @@
       }
     ],
     "platforms": ["ios", "android", "macos", "windows", "linux"]
+  },
+  {
+    "app_name": "defiway_tonwallet",
+    "name": "Defiway TON Wallet",
+    "image": "https://fs.defiway.com/icons/defiway.png",
+    "about_url": "https://wallet.defiway.com",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://bridge.tonapi.io/bridge"
+      },{
+        "type": "js",
+        "key": "defiway_tonwallet"
+      }
+    ],
+    "platforms": ["ios", "android", "chrome", "firefox", "safari"]
   }
 ]
