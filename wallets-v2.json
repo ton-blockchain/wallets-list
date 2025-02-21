@@ -350,5 +350,19 @@
       }
     ],
     "platforms": ["ios", "android", "macos", "windows", "linux"]
+  },
+  {
+    "app_name": "koloWeb3Wallet",
+    "name": "Kolo Web3 Wallet",
+    "image": "https://raw.githubusercontent.com/onidev1/tc-assets/refs/heads/main/kolo_logo_288.png",
+    "about_url": "https://kolo.in/ua/cryptowallet",
+    "universal_url": "https://t.me/kolo?attach=wallet",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://web3-bridge.kolo.in/"
+      }
+    ],
+    "platforms": ["ios", "android", "macos", "windows", "linux"]
   }
 ]
