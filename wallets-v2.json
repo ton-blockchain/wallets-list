@@ -253,7 +253,7 @@
   {
     "app_name": "uxuyWallet",
     "name": "UXUY Wallet",
-    "image": "https://raw.githubusercontent.com/uxuycom/uxuy-docsite/main/static/assets/UXUYWallet-logo/UXUYWallet_logo_circle.svg",
+    "image": "https://chain-cdn.uxuy.com/logo/square_288.png",
     "about_url": "https://docs.uxuy.com",
     "universal_url": "https://t.me/UXUYbot?attach=wallet",
     "bridge": [
