@@ -351,5 +351,24 @@
       }
     ],
     "platforms": ["ios", "android", "macos", "windows", "linux"]
+  },
+  {
+    "app_name": "defiway",
+    "name": "Defiway",
+    "image": "https://fs.defiway.com/icons/tonconnect-icon.png",
+    "about_url": "https://wallet.defiway.com",
+    "universal_url": "https://wallet.defiway.com/ton-connect",
+    "deepLink": "defiway-tc://",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://api.defiway.com/ton-connect"
+      },
+      {
+        "type": "js",
+        "key": "defiway"
+      }
+    ],
+    "platforms": ["ios", "android", "chrome", "safari"]
   }
 ]
