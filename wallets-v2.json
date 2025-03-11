@@ -39,6 +39,7 @@
     "image": "https://static.mytonwallet.io/icon-256.png",
     "about_url": "https://mytonwallet.io",
     "universal_url": "https://connect.mytonwallet.org",
+    "deepLink": "mytonwallet-tc://",
     "bridge": [
       {
         "type": "js",
@@ -364,5 +365,17 @@
        }
     ],
     "platforms": ["ios", "android", "chrome", "windows", "macos"]
+    "app_name": "miraiapp-tg",
+    "name": "Mirai Mini App",
+    "image": "https://cdn.mirailabs.co/miraihub/miraiapp-tg-icon-288.png",
+    "about_url": "https://mirai.app",
+    "universal_url": "https://t.me/MiraiAppBot?attach=wallet",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://bridge.mirai.app"
+     }
+    ],
+    "platforms": ["ios", "android", "macos", "windows", "linux"]
   }
 ]
