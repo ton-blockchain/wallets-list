@@ -133,7 +133,7 @@
   {
     "app_name": "fintopio-tg",
     "name": "Fintopio",
-    "image": "https://fintopio.com/tonconnect-icon.png",
+    "image": "https://raw.githubusercontent.com/fintopio/ton-pub/refs/heads/main/logos/tonconnect-icon.png",
     "about_url": "https://fintopio.com",
     "universal_url": "https://t.me/fintopio?attach=wallet",
     "bridge": [
