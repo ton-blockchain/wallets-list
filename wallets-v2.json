@@ -39,6 +39,7 @@
     "image": "https://static.mytonwallet.io/icon-256.png",
     "about_url": "https://mytonwallet.io",
     "universal_url": "https://connect.mytonwallet.org",
+    "deepLink": "mytonwallet-tc://",
     "bridge": [
       {
         "type": "js",
@@ -132,7 +133,7 @@
   {
     "app_name": "fintopio-tg",
     "name": "Fintopio",
-    "image": "https://fintopio.com/tonconnect-icon.png",
+    "image": "https://raw.githubusercontent.com/fintopio/ton-pub/refs/heads/main/logos/tonconnect-icon.png",
     "about_url": "https://fintopio.com",
     "universal_url": "https://t.me/fintopio?attach=wallet",
     "bridge": [
@@ -347,6 +348,34 @@
       {
         "type": "sse",
         "url": "https://go-bridge.tomo.inc/bridge"
+      }
+    ],
+    "platforms": ["ios", "android", "macos", "windows", "linux"]
+  },
+  {
+    "app_name": "miraiapp-tg",
+    "name": "Mirai Mini App",
+    "image": "https://cdn.mirailabs.co/miraihub/miraiapp-tg-icon-288.png",
+    "about_url": "https://mirai.app",
+    "universal_url": "https://t.me/MiraiAppBot?attach=wallet",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://bridge.mirai.app"
+      }
+    ],
+    "platforms": ["ios", "android", "macos", "windows", "linux"]
+  },
+  {
+    "app_name": "Architec.ton",
+    "name": "Architec.ton",
+    "image": "https://raw.githubusercontent.com/Architec-Ton/wallet-tma/refs/heads/dev/public/images/arcwallet_logo.png",
+    "about_url": "https://architecton.tech",
+    "universal_url": "https://t.me/architec_ton_bot?attach=wallet",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://tc.architecton.su/bridge"
       }
     ],
     "platforms": ["ios", "android", "macos", "windows", "linux"]
