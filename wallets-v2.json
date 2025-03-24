@@ -16,7 +16,7 @@
       {
         "name": "SendTransaction",
         "maxMessages": 4,
-        "extraCurrencySupported": false
+        "extraCurrencySupported": true
       }
     ]
   },
