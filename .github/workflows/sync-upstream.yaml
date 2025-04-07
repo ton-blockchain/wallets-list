@@ -1,0 +1,39 @@
+name: Sync Upstream
+
+on:
+  schedule:
+    - cron: '32 4 * * *'  
+  workflow_dispatch:     
+  push:
+    branches:
+      - main           
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+
+      - name: Set up Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Add upstream
+        run: |
+          git remote add upstream https://github.com/ton-blockchain/wallets-list.git
+          git fetch upstream
+
+      - name: Rebase onto upstream
+        run: |
+          git checkout main
+          git rebase upstream/main
+
+      - name: Push changes
+        run: |
+          git push origin main --force
+        env:
+          GITHUB_TOKEN: ${{ secrets.MY_TOKEN }}
