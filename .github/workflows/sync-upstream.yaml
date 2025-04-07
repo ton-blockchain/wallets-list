@@ -27,10 +27,10 @@ jobs:
           git remote add upstream https://github.com/ton-blockchain/wallets-list.git
           git fetch upstream
 
-      - name: Rebase onto upstream
+      - name: Merge upstream
         run: |
           git checkout main
-          git rebase upstream/main
+          git merge --no-edit upstream/main
 
       - name: Push changes
         run: |
