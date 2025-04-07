@@ -30,7 +30,7 @@ jobs:
       - name: Merge upstream
         run: |
           git checkout main
-          git merge --no-edit upstream/main
+          git merge --no-edit --allow-unrelated-histories upstream/main
 
       - name: Push changes
         run: |
