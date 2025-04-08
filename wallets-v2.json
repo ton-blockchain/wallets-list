@@ -544,5 +544,26 @@
         "extraCurrencySupported": false
       }
     ]
+  },
+  {
+    "app_name": "tokenpocket",
+    "name": "TokenPocket",
+    "image": "https://hk.tpstatic.net/logo/tokenpocket.png",
+    "about_url": "https://www.tokenpocket.pro",
+    "universal_url": "https://tp-lab.tptool.pro/ton-connect/",
+    "bridge": [
+        {
+            "type": "js",
+            "key": "tokenpocket"
+        },
+        {
+            "type": "sse",
+            "url": "https://ton-connect.mytokenpocket.vip/bridge"
+        }
+    ],
+    "platforms": [
+        "ios",
+        "android"
+    ]
   }
 ]
