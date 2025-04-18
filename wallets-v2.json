@@ -11,7 +11,14 @@
         "url": "https://walletbot.me/tonconnect-bridge/bridge"
       }
     ],
-    "platforms": ["ios", "android", "macos", "windows", "linux"]
+    "platforms": ["ios", "android", "macos", "windows", "linux"],
+    "features": [
+      {
+        "name": "SendTransaction",
+        "maxMessages": 4,
+        "extraCurrencySupported": true
+      }
+    ]
   },
   {
     "app_name": "tonkeeper",
@@ -31,7 +38,14 @@
         "key": "tonkeeper"
       }
     ],
-    "platforms": ["ios", "android", "chrome", "firefox", "macos"]
+    "platforms": ["ios", "android", "chrome", "firefox", "macos"],
+    "features": [
+      {
+        "name": "SendTransaction",
+        "maxMessages": 255,
+        "extraCurrencySupported": true
+      }
+    ]
   },
   {
     "app_name": "mytonwallet",
@@ -39,6 +53,7 @@
     "image": "https://static.mytonwallet.io/icon-256.png",
     "about_url": "https://mytonwallet.io",
     "universal_url": "https://connect.mytonwallet.org",
+    "deepLink": "mytonwallet-tc://",
     "bridge": [
       {
         "type": "js",
@@ -57,6 +72,13 @@
       "ios",
       "android",
       "firefox"
+    ],
+    "features": [
+      {
+        "name": "SendTransaction",
+        "maxMessages": 4,
+        "extraCurrencySupported": false
+      }
     ]
   },
   {
@@ -75,7 +97,14 @@
         "url": "https://connect.tonhubapi.com/tonconnect"
       }
     ],
-    "platforms": ["ios", "android"]
+    "platforms": ["ios", "android"],
+    "features": [
+      {
+        "name": "SendTransaction",
+        "maxMessages": 4,
+        "extraCurrencySupported": false
+      }
+    ]
   },
   {
     "app_name": "bitgetTonWallet",
@@ -94,7 +123,14 @@
       }
     ],
     "platforms": ["ios", "android", "chrome"],
-    "universal_url": "https://bkcode.vip/ton-connect"
+    "universal_url": "https://bkcode.vip/ton-connect",
+    "features": [
+      {
+        "name": "SendTransaction",
+        "maxMessages": 4,
+        "extraCurrencySupported": false
+      }
+    ]
   },
   {
     "app_name": "okxMiniWallet",
@@ -108,7 +144,14 @@
         "url": "https://www.okx.com/tonbridge/discover/rpc/bridge"
       }
     ],
-    "platforms": ["ios", "android", "macos", "windows", "linux"]
+    "platforms": ["ios", "android", "macos", "windows", "linux"],
+    "features": [
+      {
+        "name": "SendTransaction",
+        "maxMessages": 4,
+        "extraCurrencySupported": false
+      }
+    ]
   },
   {
     "app_name": "binanceWeb3TonWallet",
@@ -127,12 +170,19 @@
       }
     ],
     "platforms":  ["ios", "android", "macos", "windows", "linux"],
-    "universal_url": "https://app.binance.com/cedefi/ton-connect"
+    "universal_url": "https://app.binance.com/cedefi/ton-connect",
+    "features": [
+      {
+        "name": "SendTransaction",
+        "maxMessages": 4,
+        "extraCurrencySupported": false
+      }
+    ]
   },
   {
     "app_name": "fintopio-tg",
     "name": "Fintopio",
-    "image": "https://fintopio.com/tonconnect-icon.png",
+    "image": "https://raw.githubusercontent.com/fintopio/ton-pub/refs/heads/main/logos/tonconnect-icon.png",
     "about_url": "https://fintopio.com",
     "universal_url": "https://t.me/fintopio?attach=wallet",
     "bridge": [
@@ -141,7 +191,14 @@
         "url": "https://wallet-bridge.fintopio.com/bridge"
       }
     ],
-    "platforms": ["ios", "android", "macos", "windows", "linux"]
+    "platforms": ["ios", "android", "macos", "windows", "linux"],
+    "features": [
+      {
+        "name": "SendTransaction",
+        "maxMessages": 4,
+        "extraCurrencySupported": false
+      }
+    ]
   },
   {
     "app_name": "okxTonWallet",
@@ -159,7 +216,14 @@
         "url": "https://www.okx.com/tonbridge/discover/rpc/bridge"
       }
     ],
-    "platforms": ["chrome", "safari", "firefox", "ios", "android"]
+    "platforms": ["chrome", "safari", "firefox", "ios", "android"],
+    "features": [
+      {
+        "name": "SendTransaction",
+        "maxMessages": 4,
+        "extraCurrencySupported": false
+      }
+    ]
   },
   {
     "app_name": "hot",
@@ -177,7 +241,14 @@
         "key": "hotWallet"
       }
     ],
-    "platforms": ["ios", "android", "macos", "windows", "linux"]
+    "platforms": ["ios", "android", "macos", "windows", "linux"],
+    "features": [
+      {
+        "name": "SendTransaction",
+        "maxMessages": 4,
+        "extraCurrencySupported": false
+      }
+    ]
   },
   {
     "app_name": "bybitTonWallet",
@@ -196,7 +267,14 @@
         "url": "https://api-node.bybit.com/spot/api/web3/bridge/ton/bridge"
       }
     ],
-    "platforms": ["ios", "android", "chrome"]
+    "platforms": ["ios", "android", "chrome"],
+    "features": [
+      {
+        "name": "SendTransaction",
+        "maxMessages": 4,
+        "extraCurrencySupported": false
+      }
+    ]
   },
   {
     "app_name": "dewallet",
@@ -210,27 +288,41 @@
         "url": "https://bridge.dewallet.pro/bridge"
       }
     ],
-    "platforms": ["ios", "android", "macos", "windows", "linux"]
+    "platforms": ["ios", "android", "macos", "windows", "linux"],
+    "features": [
+      {
+        "name": "SendTransaction",
+        "maxMessages": 4,
+        "extraCurrencySupported": false
+      }
+    ]
   },
   {
     "app_name": "safepalwallet",
     "name": "SafePal",
     "image": "https://s.pvcliping.com/web/public_image/SafePal_x288.png",
-    "tondns":  "",
+    "tondns": "",
     "about_url": "https://www.safepal.com",
     "universal_url": "https://link.safepal.io/ton-connect",
     "deepLink": "safepal-tc://",
     "bridge": [
       {
-          "type": "sse",
-          "url": "https://ton-bridge.safepal.com/tonbridge/v1/bridge"
+        "type": "sse",
+        "url": "https://ton-bridge.safepal.com/tonbridge/v1/bridge"
       },
       {
-          "type": "js",
-          "key": "safepalwallet"
+        "type": "js",
+        "key": "safepalwallet"
       }
     ],
-    "platforms": ["ios", "android", "chrome", "firefox"]
+    "platforms": ["ios", "android", "chrome", "firefox"],
+    "features": [
+      {
+        "name": "SendTransaction",
+        "maxMessages": 1,
+        "extraCurrencySupported": false
+      }
+    ]
   },
   {
     "app_name": "GateWallet",
@@ -248,7 +340,14 @@
       }
     ],
     "platforms": ["ios", "android"],
-    "universal_url": "https://gateio.go.link/gateio/web3?adj_t=1ff8khdw_1fu4ccc7"
+    "universal_url": "https://gateio.go.link/gateio/web3?adj_t=1ff8khdw_1fu4ccc7",
+    "features": [
+      {
+        "name": "SendTransaction",
+        "maxMessages": 4,
+        "extraCurrencySupported": false
+      }
+    ]
   },
   {
     "app_name": "uxuyWallet",
@@ -275,7 +374,14 @@
         "key": "openmask"
       }
     ],
-    "platforms": ["chrome"]
+    "platforms": ["chrome"],
+    "features": [
+      {
+        "name": "SendTransaction",
+        "maxMessages": 4,
+        "extraCurrencySupported": false
+      }
+    ]
   },
   {
     "app_name": "BitgetWeb3",
@@ -289,7 +395,14 @@
         "url": "https://ton-connect-bridge.bgwapi.io/bridge"
       }
     ],
-    "platforms": ["ios", "android", "windows", "macos", "linux"]
+    "platforms": ["ios", "android", "windows", "macos", "linux"],
+    "features": [
+      {
+        "name": "SendTransaction",
+        "maxMessages": 4,
+        "extraCurrencySupported": false
+      }
+    ]
   },
   {
     "app_name": "tobi",
@@ -309,6 +422,13 @@
       "macos",
       "windows",
       "linux"
+    ],
+    "features": [
+      {
+        "name": "SendTransaction",
+        "maxMessages": 4,
+        "extraCurrencySupported": false
+      }
     ]
   },
   {
@@ -322,7 +442,14 @@
         "key": "xtonwallet"
       }
     ],
-    "platforms": ["chrome", "firefox"]
+    "platforms": ["chrome", "firefox"],
+    "features": [
+      {
+        "name": "SendTransaction",
+        "maxMessages": 1,
+        "extraCurrencySupported": false
+      }
+    ]
   },
   {
     "app_name": "tonwallet",
@@ -335,7 +462,14 @@
         "key": "tonwallet"
       }
     ],
-    "platforms": ["chrome"]
+    "platforms": ["chrome"],
+    "features": [
+      {
+        "name": "SendTransaction",
+        "maxMessages": 4,
+        "extraCurrencySupported": false
+      }
+    ]
   },
   {
     "app_name": "bitgetWalletLite",
@@ -349,7 +483,14 @@
         "url": "https://ton-connect-bridge.bgwapi.io/bridge"
       }
     ],
-    "platforms": ["ios", "android", "macos", "windows", "linux"]
+    "platforms": ["ios", "android", "macos", "windows", "linux"],
+    "features": [
+      {
+        "name": "SendTransaction",
+        "maxMessages": 4,
+        "extraCurrencySupported": false
+      }
+    ]
   },
   {
     "app_name": "tomoWallet",
@@ -363,6 +504,76 @@
         "url": "https://go-bridge.tomo.inc/bridge"
       }
     ],
-    "platforms": ["ios", "android", "macos", "windows", "linux"]
+    "platforms": ["ios", "android", "macos", "windows", "linux"],
+    "features": [
+      {
+        "name": "SendTransaction",
+        "maxMessages": 4,
+        "extraCurrencySupported": false
+      }
+    ]
+  },
+  {
+    "app_name": "miraiapp-tg",
+    "name": "Mirai Mini App",
+    "image": "https://cdn.mirailabs.co/miraihub/miraiapp-tg-icon-288.png",
+    "about_url": "https://mirai.app",
+    "universal_url": "https://t.me/MiraiAppBot?attach=wallet",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://bridge.mirai.app"
+      }
+    ],
+    "platforms": ["ios", "android", "macos", "windows", "linux"],
+    "features": [
+      {
+        "name": "SendTransaction",
+        "maxMessages": 4,
+        "extraCurrencySupported": false
+      }
+    ]
+  },
+  {
+    "app_name": "Architec.ton",
+    "name": "Architec.ton",
+    "image": "https://raw.githubusercontent.com/Architec-Ton/wallet-tma/refs/heads/dev/public/images/arcwallet_logo.png",
+    "about_url": "https://architecton.tech",
+    "universal_url": "https://t.me/architec_ton_bot?attach=wallet",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://tc.architecton.su/bridge"
+      }
+    ],
+    "platforms": ["ios", "android", "macos", "windows", "linux"],
+    "features": [
+      {
+        "name": "SendTransaction",
+        "maxMessages": 255,
+        "extraCurrencySupported": false
+      }
+    ]
+  },
+  {
+    "app_name": "tokenpocket",
+    "name": "TokenPocket",
+    "image": "https://hk.tpstatic.net/logo/tokenpocket.png",
+    "about_url": "https://www.tokenpocket.pro",
+    "universal_url": "https://tp-lab.tptool.pro/ton-connect/",
+    "bridge": [
+        {
+            "type": "js",
+            "key": "tokenpocket"
+        },
+        {
+            "type": "sse",
+            "url": "https://ton-connect.mytokenpocket.vip/bridge"
+        }
+    ],
+    "platforms": [
+        "ios",
+        "android"
+    ]
   }
 ]
