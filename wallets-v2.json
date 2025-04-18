@@ -575,5 +575,26 @@
      }
     ],
     "platforms": ["ios", "android", "macos", "windows", "linux"]
+  },
+  {
+    "app_name": "tongate",
+    "name": "TonGate",
+    "image": "https://tongate.app/assets/images/tongate_icon.png",
+    "about_url": "https://tongate.app",
+    "universal_url": "https://tongate.app/connect",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://bridge.tonapi.io/bridge"
+      }
+    ],
+    "platforms": ["ios", "android"],
+    "features": [
+      {
+        "name": "SendTransaction",
+        "maxMessages": 4,
+        "extraCurrencySupported": false
+      }
+    ]
   }
 ]
