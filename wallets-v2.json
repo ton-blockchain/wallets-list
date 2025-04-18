@@ -561,5 +561,19 @@
         "ios",
         "android"
     ]
+  },
+  {
+    "app_name": "uxuyWallet",
+    "name": "UXUY Wallet",
+    "image": "https://chain-cdn.uxuy.com/logo/square_288.png",
+    "about_url": "https://docs.uxuy.com",
+    "universal_url": "https://t.me/UXUYbot?attach=wallet",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://bridge.uxuy.me/bridge"
+     }
+    ],
+    "platforms": ["ios", "android", "macos", "windows", "linux"]
   }
 ]
