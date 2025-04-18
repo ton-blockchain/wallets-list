@@ -350,20 +350,6 @@
     ]
   },
   {
-    "app_name": "uxuyWallet",
-    "name": "UXUY Wallet",
-    "image": "https://chain-cdn.uxuy.com/logo/square_288.png",
-    "about_url": "https://docs.uxuy.com",
-    "universal_url": "https://t.me/UXUYbot?attach=wallet",
-    "bridge": [
-      {
-        "type": "sse",
-        "url": "https://bridge.uxuy.me/bridge"
-     }
-    ],
-    "platforms": ["ios", "android", "macos", "windows", "linux"]
-  },
-  {
     "app_name": "openmask",
     "name": "OpenMask",
     "image": "https://raw.githubusercontent.com/OpenProduct/openmask-extension/main/public/openmask-logo-288.png",
@@ -575,5 +561,19 @@
         "ios",
         "android"
     ]
+  },
+  {
+    "app_name": "uxuyWallet",
+    "name": "UXUY Wallet",
+    "image": "https://chain-cdn.uxuy.com/logo/square_288.png",
+    "about_url": "https://docs.uxuy.com",
+    "universal_url": "https://t.me/UXUYbot?attach=wallet",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://bridge.uxuy.me/bridge"
+     }
+    ],
+    "platforms": ["ios", "android", "macos", "windows", "linux"]
   }
 ]
