@@ -550,7 +550,7 @@
     "bridge": [
       {
         "type": "sse",
-        "url": "https://web3-bridge.kolo.in/"
+        "url": "https://web3-bridge.kolo.in/bridge"
       }
     ],
     "platforms": ["ios", "android", "macos", "windows", "linux"],
