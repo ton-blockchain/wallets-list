@@ -588,10 +588,6 @@
       {
         "type": "sse",
         "url": "https://bridge.tonapi.io/bridge"
-      },
-      {
-        "type": "js",
-        "key": "tonkeeper"
       }
     ],
     "platforms": ["ios", "macos", "windows", "linux"],
