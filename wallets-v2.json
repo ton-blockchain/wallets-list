@@ -575,5 +575,24 @@
      }
     ],
     "platforms": ["ios", "android", "macos", "windows", "linux"]
+  },
+  {
+    "app_name": "miraiapp",
+    "name": "Mirai App",
+    "image": "https://cdn.mirailabs.co/miraihub/miraiapp-icon-288.png",
+    "about_url": "https://mirai.app",
+    "universal_url": "https://go.miraiapp.io/ton-connect",
+    "deepLink": "miraiapp://",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://bridge.mirai.app"
+      },
+      {
+        "type": "js",
+        "key": "miraiapp"
+      }
+    ],
+    "platforms": ["ios", "android", "chrome", "firefox"]
   }
 ]
