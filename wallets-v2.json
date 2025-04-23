@@ -575,5 +575,32 @@
      }
     ],
     "platforms": ["ios", "android", "macos", "windows", "linux"]
+  },
+  {
+    "app_name": "tonkeeper-pro",
+    "name": "Tonkeeper Pro",
+    "image": "https://tonkeeper.com/assets/pro-tonconnect-icon.png",
+    "tondns": "tonkeeper.ton",
+    "about_url": "https://tonkeeper.com/pro",
+    "universal_url": "https://app.tonkeeper.com/pro/ton-connect",
+    "deepLink": "tonkeeper-pro-tc://",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://bridge.tonapi.io/bridge"
+      },
+      {
+        "type": "js",
+        "key": "tonkeeper"
+      }
+    ],
+    "platforms": ["ios"],
+    "features": [
+      {
+        "name": "SendTransaction",
+        "maxMessages": 255,
+        "extraCurrencySupported": true
+      }
+    ]
   }
 ]
