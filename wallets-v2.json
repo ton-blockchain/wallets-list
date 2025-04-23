@@ -594,7 +594,7 @@
         "key": "tonkeeper"
       }
     ],
-    "platforms": ["ios"],
+    "platforms": ["ios", "macos", "windows", "linux"],
     "features": [
       {
         "name": "SendTransaction",
