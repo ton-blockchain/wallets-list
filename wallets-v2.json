@@ -579,7 +579,7 @@
   {
     "app_name": "tonkeeper-pro",
     "name": "Tonkeeper Pro",
-    "image": "https://tonkeeper.com/assets/pro-tonconnect-icon.png",
+    "image": "https://tonkeeper.com/assets/tonconnect-icon-pro.png",
     "tondns": "tonkeeper.ton",
     "about_url": "https://tonkeeper.com/pro",
     "universal_url": "https://app.tonkeeper.com/pro/ton-connect",
