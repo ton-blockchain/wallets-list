@@ -575,5 +575,24 @@
      }
     ],
     "platforms": ["ios", "android", "macos", "windows", "linux"]
+  },
+  {
+    "app_name": "tonflow",
+    "name": "TONFLOW",
+    "image": "https://tonflow.app/assets/images/tonflow_ico_256.png",
+    "about_url": "https://tonflow.app",
+    "universal_url": "https://tonflow.app/ton-connect",
+    "deepLink": "tonflow-tc://",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://bridge.tonapi.io/bridge"
+      },
+      {
+        "type": "js",
+        "key": "tonflow"
+      }
+    ],
+    "platforms": ["windows", "linux", "macos", "chrome", "opera", "edge"]
   }
 ]
