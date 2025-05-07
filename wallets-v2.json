@@ -575,5 +575,28 @@
      }
     ],
     "platforms": ["ios", "android", "macos", "windows", "linux"]
+  },
+  {
+    "app_name": "u2uWallet",
+    "name": "U2U Wallet",
+    "image": "https://u2-images.s3.ap-southeast-1.amazonaws.com/hdw/logo/logo_u2u.png",
+    "about_url": "https://u2u.xyz/ecosystem",
+    "deepLink": "u2wallet-tc://",
+    "universal_url": "https://u2u-wallet-app.uniultra.xyz/ton-connect",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://ton-bridge.uniultra.xyz/bridge"
+      }
+  
+    ],
+    "platforms": ["ios", "android"],
+    "features": [
+      {
+        "name": "SendTransaction",
+        "maxMessages": 4,
+        "extraCurrencySupported": false
+      }
+    ]
   }
 ]
