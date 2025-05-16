@@ -15,7 +15,7 @@
     "features": [
       {
         "name": "SendTransaction",
-        "maxMessages": 4,
+        "maxMessages": 255,
         "extraCurrencySupported": true
       }
     ]
@@ -80,7 +80,7 @@
     "features": [
       {
         "name": "SendTransaction",
-        "maxMessages": 4,
+        "maxMessages": 255,
         "extraCurrencySupported": false
       }
     ]
@@ -105,8 +105,8 @@
     "features": [
       {
         "name": "SendTransaction",
-        "maxMessages": 4,
-        "extraCurrencySupported": false
+        "maxMessages": 255,
+        "extraCurrencySupported": true
       }
     ]
   },
@@ -519,7 +519,7 @@
     "features": [
       {
         "name": "SendTransaction",
-        "maxMessages": 4,
+        "maxMessages": 255,
         "extraCurrencySupported": false
       }
     ]
