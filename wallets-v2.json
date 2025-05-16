@@ -515,7 +515,7 @@
     "features": [
       {
         "name": "SendTransaction",
-        "maxMessages": 4,
+        "maxMessages": 255,
         "extraCurrencySupported": false
       }
     ]
