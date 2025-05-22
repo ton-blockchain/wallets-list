@@ -598,5 +598,30 @@
         "extraCurrencySupported": true
       }
     ]
-  }
+  },
+  {
+  "app_name": "koloWeb3Wallet",
+  "name": "Kolo",
+  "image": "https://raw.githubusercontent.com/onidev1/tc-assets/refs/heads/main/kolo_logo_288.png",
+  "about_url": "https://kolo.xyz",
+  "universal_url": "https://t.me/kolo?attach=wallet",
+  "bridge": [
+    {
+        "type": "js",
+        "key": "koloWeb3Wallet"
+    },
+    {
+      "type": "sse",
+      "url": "https://web3-bridge.kolo.in/"
+    }
+  ],
+  "platforms": ["ios", "android", "macos", "windows", "linux"],
+  "features": [
+    {
+      "name": "SendTransaction",
+      "maxMessages": 255,
+      "extraCurrencySupported": false
+    }
+  ]
+}
 ]
