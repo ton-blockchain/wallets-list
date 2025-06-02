@@ -26,7 +26,18 @@ Each entry has the following format (subject to change):
         "key": "tonkeeper"
      }
   ],
-  "platforms": ["ios", "android", "chrome", "firefox", "safari", "windows", "macos", "linux"]
+  "platforms": ["ios", "android", "chrome", "firefox", "safari", "windows", "macos", "linux"],
+  "features": [
+    {
+      "name": "SendTransaction",
+      "maxMessages": 4,
+      "extraCurrencySupported": true
+    },
+    {
+      "name": "SignData",
+      "types": ["text", "binary", "cell"]
+    }
+  ]
 }
 ```
 
@@ -41,6 +52,12 @@ Each entry has the following format (subject to change):
     - `type="sse"`: specify the `url` of your wallet's implementation of the [HTTP bridge](https://github.com/ton-connect/docs/blob/main/bridge.md#http-bridge).
     - `type="js"`: specify the `key` through which your wallet handles [JS Bridge](https://github.com/ton-connect/docs/blob/main/bridge.md#js-bridge) connection, specify the binding for your bridge object accessible through `window`. Example: the key `"tonkeeper"` means the bridge can be accessed as `window.tonkeeper`.
 - `platforms`: list of platforms on which your wallet works: mobile app "ios", "android"; desktop app "windows", "macos", "linux"; browser extension "chrome", "firefox", "safari".
+- `features`: list of supported TON Connect features and their capabilities:
+    - `SendTransaction`: Transaction sending capability
+        - `maxMessages`: maximum number of messages in one transaction (typically 4 or 255)
+        - `extraCurrencySupported`: (optional) whether wallet supports extra currencies
+    - `SignData`: Data signing capability  
+        - `types`: array of supported data types for signing: `"text"`, `"binary"`, `"cell"`
 
 If your wallet supports HTTP Bridge, you should specify `universal_url` and `bridge.type="sse"`.
 
