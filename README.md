@@ -55,7 +55,7 @@ Each entry has the following format (subject to change):
 - `features`: list of supported TON Connect features and their capabilities:
     - `SendTransaction`: Transaction sending capability
         - `maxMessages`: maximum number of messages in one transaction (typically 4 or 255)
-        - `extraCurrencySupported`: (optional) whether wallet supports extra currencies
+        - `extraCurrencySupported`: (optional, `false` by default) whether wallet supports extra currencies
     - `SignData`: Data signing capability  
         - `types`: array of supported data types for signing: `"text"`, `"binary"`, `"cell"`
 
