@@ -31,7 +31,7 @@ Each entry has the following format (subject to change):
     {
       "name": "SendTransaction",
       "maxMessages": 4,
-      "extraCurrencySupported": true
+      "extraCurrencySupported": false
     },
     {
       "name": "SignData",
