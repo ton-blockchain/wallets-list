@@ -619,6 +619,13 @@
     "platforms": [
       "ios",
       "android"
+    ],
+    "features": [
+      {
+        "name": "SendTransaction",
+        "maxMessages": 255,
+        "extraCurrencySupported": false
+      }
     ]
   }
 ]
