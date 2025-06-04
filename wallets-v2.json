@@ -598,5 +598,27 @@
         "extraCurrencySupported": true
       }
     ]
+  },
+  {
+    "app_name": "nicegramWallet",
+    "name": "Nicegram Wallet",
+    "image": "https://static.nicegram.app/icon.png",
+    "about_url": "https://nicegram.app",
+    "universal_url": "https://nicegram.app/tc",
+    "deepLink": "nicegram-tc://",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://tc.nicegram.app/bridge"
+      },
+      {
+        "type": "js",
+        "key": "nicegramWallet"
+      }
+    ],
+    "platforms": [
+      "ios",
+      "android"
+    ]
   }
 ]
