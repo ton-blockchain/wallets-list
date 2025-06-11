@@ -627,5 +627,26 @@
         "extraCurrencySupported": false
       }
     ]
+  },
+  {
+    "app_name": "blitzwallet",
+    "name": "BLITZ wallet",
+    "image": "https://blitzwallet.cfd/wallet/public/logo.png",
+    "about_url": "https://blitzwallet.cfd",
+    "universal_url": "https://t.me/blitz_wallet_bot/wallet",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://blitzwallet.cfd/bridge/"
+      }
+    ],
+    "platforms": ["ios", "android", "macos", "windows", "linux"],
+    "features": [
+      {
+        "name": "SendTransaction",
+        "maxMessages": 4,
+        "extraCurrencySupported": false
+      }
+    ]
   }
 ]
