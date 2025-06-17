@@ -48,6 +48,12 @@
       {
         "name": "SignData",
         "types": ["text", "binary", "cell"]
+      },
+      {
+        "name": "Subscription",
+        "versions": {
+          "v2": true
+        }
       }
     ]
   },
