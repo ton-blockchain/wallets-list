@@ -593,7 +593,7 @@
         "key": "defiway"
       }
     ],
-    "platforms": ["ios", "android", "chrome", "safari"]
+    "platforms": ["ios", "chrome", "safari"]
   },
   {
     "app_name": "tonkeeper-pro",
