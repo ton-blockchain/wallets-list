@@ -222,7 +222,7 @@
   },
   {
     "app_name": "okxTonWallet",
-    "name": "OKX App",
+    "name": "OKX",
     "image": "https://static.okx.com/cdn/web3/assets/imgs/be493af9-09fe-4e93-af0d-d6c4b040cea9.png",
     "about_url": "https://www.okx.com/web3",
     "universal_url": "https://www.okx.com/download?appendQuery=true&deeplink=okx://web3/wallet/tonconnect",
