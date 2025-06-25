@@ -149,27 +149,6 @@
     ]
   },
   {
-    "app_name": "okxMiniWallet",
-    "name": "OKX Mini Wallet",
-    "image": "https://static.okx.com/cdn/assets/imgs/2411/8BE1A4A434D8F58A.png",
-    "about_url": "https://www.okx.com/web3",
-    "universal_url": "https://t.me/OKX_WALLET_BOT?attach=wallet",
-    "bridge": [
-      {
-        "type": "sse",
-        "url": "https://www.okx.com/tonbridge/discover/rpc/bridge"
-      }
-    ],
-    "platforms": ["ios", "android", "macos", "windows", "linux"],
-    "features": [
-      {
-        "name": "SendTransaction",
-        "maxMessages": 4,
-        "extraCurrencySupported": false
-      }
-    ]
-  },
-  {
     "app_name": "binanceWeb3TonWallet",
     "name": "Binance Wallet",
     "image": "https://public.bnbstatic.com/static/binance-w3w/ton-provider/binancew3w.png",
