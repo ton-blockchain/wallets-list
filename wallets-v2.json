@@ -219,7 +219,7 @@
   {
     "app_name": "okxWallet",
     "name": "OKX Wallet",
-    "image": "https://static.coinall.ltd/cdn/wallet/banner/7d3ef66c-a121-489f-8621-579ea9faf240-288_appicon.png",
+    "image": "https://static.okx.com/cdn/web3/assets/imgs/70d223c0-8527-40c1-8292-b3cc10b53d88.png",
     "about_url": "https://web3.okx.com",
     "universal_url": "https://web3.okx.com/download?appendQuery=true&deeplink=okxwallet://web3/wallet/tonconnect",
     "bridge": [
@@ -244,7 +244,7 @@
   {
     "app_name": "okxTonWallet",
     "name": "OKX App",
-    "image": "https://static.okx.com/cdn/assets/imgs/247/58E63FEA47A2B7D7.png",
+    "image": "https://static.okx.com/cdn/web3/assets/imgs/be493af9-09fe-4e93-af0d-d6c4b040cea9.png",
     "about_url": "https://www.okx.com/web3",
     "universal_url": "https://www.okx.com/download?appendQuery=true&deeplink=okx://web3/wallet/tonconnect",
     "bridge": [
