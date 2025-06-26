@@ -15,7 +15,7 @@
     "features": [
       {
         "name": "SendTransaction",
-        "maxMessages": 4,
+        "maxMessages": 255,
         "extraCurrencySupported": true
       }
     ]
@@ -76,7 +76,7 @@
     "features": [
       {
         "name": "SendTransaction",
-        "maxMessages": 4,
+        "maxMessages": 255,
         "extraCurrencySupported": false
       }
     ]
@@ -101,8 +101,8 @@
     "features": [
       {
         "name": "SendTransaction",
-        "maxMessages": 4,
-        "extraCurrencySupported": false
+        "maxMessages": 255,
+        "extraCurrencySupported": true
       }
     ]
   },
@@ -473,7 +473,7 @@
     "features": [
       {
         "name": "SendTransaction",
-        "maxMessages": 4,
+        "maxMessages": 255,
         "extraCurrencySupported": false
       }
     ]
@@ -515,7 +515,7 @@
     "features": [
       {
         "name": "SendTransaction",
-        "maxMessages": 4,
+        "maxMessages": 255,
         "extraCurrencySupported": false
       }
     ]
@@ -540,6 +540,94 @@
         "extraCurrencySupported": false
       }
     ]
+  },
+  {
+    "app_name": "tokenpocket",
+    "name": "TokenPocket",
+    "image": "https://hk.tpstatic.net/logo/tokenpocket.png",
+    "about_url": "https://www.tokenpocket.pro",
+    "universal_url": "https://tp-lab.tptool.pro/ton-connect/",
+    "bridge": [
+        {
+            "type": "js",
+            "key": "tokenpocket"
+        },
+        {
+            "type": "sse",
+            "url": "https://ton-connect.mytokenpocket.vip/bridge"
+        }
+    ],
+    "platforms": [
+        "ios",
+        "android"
+    ]
+  },
+  {
+    "app_name": "uxuyWallet",
+    "name": "UXUY Wallet",
+    "image": "https://chain-cdn.uxuy.com/logo/square_288.png",
+    "about_url": "https://docs.uxuy.com",
+    "universal_url": "https://t.me/UXUYbot?attach=wallet",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://bridge.uxuy.me/bridge"
+     }
+    ],
+    "platforms": ["ios", "android", "macos", "windows", "linux"]
+  },
+  {
+    "app_name": "tonkeeper-pro",
+    "name": "Tonkeeper Pro",
+    "image": "https://tonkeeper.com/assets/tonconnect-icon-pro.png",
+    "tondns": "tonkeeper.ton",
+    "about_url": "https://tonkeeper.com/pro",
+    "universal_url": "https://app.tonkeeper.com/pro/ton-connect",
+    "deepLink": "tonkeeper-pro-tc://",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://bridge.tonapi.io/bridge"
+      }
+    ],
+    "platforms": ["ios", "macos", "windows", "linux"],
+    "features": [
+      {
+        "name": "SendTransaction",
+        "maxMessages": 255,
+        "extraCurrencySupported": true
+      }
+    ]
+  },
+  {
+    "app_name": "nicegramWallet",
+    "name": "Nicegram Wallet",
+    "image": "https://static.nicegram.app/icon.png",
+    "about_url": "https://nicegram.app",
+    "universal_url": "https://nicegram.app/tc",
+    "deepLink": "nicegram-tc://",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://tc.nicegram.app/bridge"
+      },
+      {
+        "type": "js",
+        "key": "nicegramWallet"
+      }
+    ],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "features": [
+      {
+        "name": "SendTransaction",
+        "maxMessages": 255,
+        "extraCurrencySupported": false
+      }
+    ]
+
   },
   {
     "app_name": "echoooTonWallet",
