@@ -647,5 +647,31 @@
       }
     ],
     "platforms": ["ios", "android"]
+  },
+  {
+    "app_name": "imToken",
+    "name": "imToken",
+    "image": "https://aws-v2-cdn.token.im/brand/imToken-logo.png",
+    "about_url": "https://token.im/",
+    "universal_url": "https://connect.token.im/link/ton-connect",
+    "deepLink": "imtokenv2://link/ton-connect",
+    "bridge": [ 
+       {
+          "type": "sse",
+          "url": "https://connect.token.im/tonbridge"
+       },
+       {
+          "type": "js",
+          "key": "imTokenTon"
+       }
+    ],
+    "platforms": ["ios", "android"],
+    "features": [
+      {
+        "name": "SendTransaction",
+        "maxMessages": 4,
+        "extraCurrencySupported": false
+      }
+    ]
   }
 ]
