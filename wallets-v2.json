@@ -19,8 +19,8 @@
         "extraCurrencySupported": true
       },
       {
-      "name": "SignData",
-      "types": ["text", "binary", "cell"]
+        "name": "SignData",
+        "types": ["text", "binary", "cell"]
       }
     ]
   },
@@ -50,8 +50,8 @@
         "extraCurrencySupported": true
       },
       {
-      "name": "SignData",
-      "types": ["text", "binary", "cell"]
+        "name": "SignData",
+        "types": ["text", "binary", "cell"]
       }
     ]
   },
@@ -88,8 +88,8 @@
         "extraCurrencySupported": false
       },
       {
-      "name": "SignData",
-      "types": ["text", "binary", "cell"]
+        "name": "SignData",
+        "types": ["text", "binary", "cell"]
       }  
     ]
   },
@@ -117,8 +117,8 @@
         "extraCurrencySupported": true
       },
       {
-      "name": "SignData",
-      "types": ["text", "binary", "cell"]
+        "name": "SignData",
+        "types": ["text", "binary", "cell"]
       }
     ]
   },
@@ -533,6 +533,10 @@
         "name": "SendTransaction",
         "maxMessages": 255,
         "extraCurrencySupported": false
+      },
+      {
+        "name": "SignData",
+        "types": ["text", "binary", "cell"]
       }
     ]
   },
@@ -614,8 +618,8 @@
         "extraCurrencySupported": true
       },
       {
-      "name": "SignData",
-      "types": ["text", "binary", "cell"]
+        "name": "SignData",
+        "types": ["text", "binary", "cell"]
       }
     ]
   },
