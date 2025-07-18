@@ -633,7 +633,7 @@
     "name": "BLITZ wallet",
     "image": "https://blitzwallet.cfd/wallet/public/logo.png",
     "about_url": "https://blitzwallet.cfd",
-    "universal_url": "https://t.me/blitz_wallet_bot/wallet",
+    "universal_url": "https://t.me/blitz_wallet_bot?attach=wallet",
     "bridge": [
       {
         "type": "sse",
