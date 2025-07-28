@@ -17,6 +17,10 @@
         "name": "SendTransaction",
         "maxMessages": 255,
         "extraCurrencySupported": true
+      },
+      {
+        "name": "SignData",
+        "types": ["text", "binary", "cell"]
       }
     ]
   },
@@ -44,6 +48,10 @@
         "name": "SendTransaction",
         "maxMessages": 255,
         "extraCurrencySupported": true
+      },
+      {
+        "name": "SignData",
+        "types": ["text", "binary", "cell"]
       }
     ]
   },
@@ -78,7 +86,11 @@
         "name": "SendTransaction",
         "maxMessages": 255,
         "extraCurrencySupported": false
-      }
+      },
+      {
+        "name": "SignData",
+        "types": ["text", "binary", "cell"]
+      }  
     ]
   },
   {
@@ -103,6 +115,10 @@
         "name": "SendTransaction",
         "maxMessages": 255,
         "extraCurrencySupported": true
+      },
+      {
+        "name": "SignData",
+        "types": ["text", "binary", "cell"]
       }
     ]
   },
@@ -517,6 +533,10 @@
         "name": "SendTransaction",
         "maxMessages": 255,
         "extraCurrencySupported": false
+      },
+      {
+        "name": "SignData",
+        "types": ["text", "binary", "cell"]
       }
     ]
   },
@@ -596,6 +616,10 @@
         "name": "SendTransaction",
         "maxMessages": 255,
         "extraCurrencySupported": true
+      },
+      {
+        "name": "SignData",
+        "types": ["text", "binary", "cell"]
       }
     ]
   },
@@ -627,6 +651,25 @@
         "extraCurrencySupported": false
       }
     ]
+  },
+  {
+    "app_name": "echoooTonWallet",
+    "name": "EchoooWallet",
+    "image": "https://cdn.echooo.xyz/front-end/source/images/logo/echooo-ton.png",
+    "about_url": "https://www.echooo.xyz",
+    "universal_url": "https://www.echooo.xyz/ton-connect",
+    "deepLink": "echooo://",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "echoooTonWallet"
+      },
+      {
+        "type": "sse",
+        "url": "https://ton-connect-bridge.echooo.link/bridge"
+      }
+    ],
+    "platforms": ["ios", "android"]
   },
   {
     "app_name": "blitzwallet",
