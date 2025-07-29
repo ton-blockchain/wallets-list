@@ -418,6 +418,25 @@
         "url": "https://ton-bridge.tobiwallet.app/bridge"
       }
     ],
+    "platforms": ["ios", "android", "macos", "windows", "linux"]
+  },
+  {
+    "app_name": "naboxTonWallet",
+    "name": "Nabox Wallet",
+    "image": "https://files.nabox.io/icon/Nabox288.png",
+    "about_url": "https://nabox.io",
+    "deepLink": "nabox://",
+    "universal_url": "https://nabox.io/app/ton-connect",
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "nabox://com.wallet.nabox"
+      },
+      {
+        "type": "js",
+        "key": "naboxTon"
+      }
+    ],
     "platforms": [
       "ios",
       "android",
