@@ -356,7 +356,7 @@
       }
     ],
     "platforms": ["ios", "android"],
-    "universal_url": "https://gateio.go.link/gateio/web3?adj_t=1ff8khdw_1fu4ccc7",
+    "universal_url": "https://gate.onelink.me/Hls0/web3?gate_web3_wallet_universal_type=ton_connect",
     "features": [
       {
         "name": "SendTransaction",
