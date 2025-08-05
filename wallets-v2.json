@@ -580,6 +580,13 @@
     "platforms": [
         "ios",
         "android"
+    ],
+    "features": [
+      {
+        "name": "SendTransaction",
+        "maxMessages": 4,
+        "extraCurrencySupported": false
+      }
     ]
   },
   {
@@ -594,7 +601,14 @@
         "url": "https://bridge.uxuy.me/bridge"
      }
     ],
-    "platforms": ["ios", "android", "macos", "windows", "linux"]
+    "platforms": ["ios", "android", "macos", "windows", "linux"],
+    "features": [
+      {
+        "name": "SendTransaction",
+        "maxMessages": 4,
+        "extraCurrencySupported": false
+      }
+    ]
   },
   {
     "app_name": "tonkeeper-pro",
@@ -669,7 +683,14 @@
         "url": "https://ton-connect-bridge.echooo.link/bridge"
       }
     ],
-    "platforms": ["ios", "android"]
+    "platforms": ["ios", "android"],
+    "features": [
+      {
+        "name": "SendTransaction",
+        "maxMessages": 255,
+        "extraCurrencySupported": false
+      }
+    ]
   },
   {
     "app_name": "blitzwallet",
