@@ -406,6 +406,21 @@
       }
     ]
   },
+   {
+    "app_name": "trustwalletTon",
+    "name": "Trust",
+    "image": "https://assets-cdn.trustwallet.com/dapps/trust.logo.png",
+    "about_url": "https://trustwallet.com/about-us",
+    "universal_url": "https://link.trustwallet.com/tc",
+    "deepLink": "trust://ton-connect",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "trustwalletTon"
+      }
+    ],
+    "platforms": ["chrome", "ios", "android"]
+  },
   {
     "app_name": "tobi",
     "name": "Tobi",
