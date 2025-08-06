@@ -733,5 +733,29 @@
         "extraCurrencySupported": false
       }
     ]
+  },
+  {
+    "app_name": "unistash",
+    "name": "Unistash",
+    "image": "https://raw.githubusercontent.com/unistash-io/resources/refs/heads/main/logotype-256.png",
+    "about_url": "https://unistash.io",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "unistash"
+      }
+    ],
+    "platforms": ["ios"],
+    "features": [
+      {
+        "name": "SendTransaction",
+        "maxMessages": 4,
+        "extraCurrencySupported": false
+      },
+      {
+        "name": "SignData",
+        "types": ["text", "binary", "cell"]
+      }
+    ]
   }
 ]
