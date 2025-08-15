@@ -407,33 +407,6 @@
     ]
   },
   {
-    "app_name": "tobi",
-    "name": "Tobi",
-    "image": "https://app.tobiwallet.app/icons/logo-288.png",
-    "about_url": "https://tobi.fun",
-    "universal_url": "https://t.me/TobiCopilotBot?attach=wallet",
-    "bridge": [
-      {
-        "type": "sse",
-        "url": "https://ton-bridge.tobiwallet.app/bridge"
-      }
-    ],
-    "platforms": [
-      "ios",
-      "android",
-      "macos",
-      "windows",
-      "linux"
-    ],
-    "features": [
-      {
-        "name": "SendTransaction",
-        "maxMessages": 4,
-        "extraCurrencySupported": false
-      }
-    ]
-  },
-  {
     "app_name": "xtonwallet",
     "name": "XTONWallet",
     "image": "https://xtonwallet.com/assets/img/icon-256-back.png",
