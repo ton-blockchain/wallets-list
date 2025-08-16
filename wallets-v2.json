@@ -706,5 +706,30 @@
         "extraCurrencySupported": false
       }
     ]
+  },
+  {
+    "app_name": "walletOnto",
+    "name": "ONTO",
+    "image": "https://onto.app/ontoMsgPic/onto.png",
+    "about_url": "https://onto.app",
+    "universal_url": "https://link.onto.app/ton-connect",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "walletOnto"
+      },
+      {
+        "type": "sse",
+        "url": "https://tonbridge.onto.app/bridge"
+      }
+    ],
+    "platforms": ["ios", "android"],
+    "features": [
+      {
+        "name": "SendTransaction",
+        "maxMessages": 255,
+        "extraCurrencySupported": false
+      }
+    ]
   }
 ]
