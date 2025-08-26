@@ -1,0 +1,20 @@
+name: PR Auto Comment
+
+on:
+  pull_request_target:
+    types: [opened]
+
+permissions: 
+   pull-requests: write
+
+jobs:
+  add-comment:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Comment PR
+        uses: thollander/actions-comment-pull-request@v3
+        with:
+          file-path: .github/workflows/comment.md
