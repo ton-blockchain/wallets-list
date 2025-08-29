@@ -149,27 +149,6 @@
     ]
   },
   {
-    "app_name": "okxMiniWallet",
-    "name": "OKX Mini Wallet",
-    "image": "https://static.okx.com/cdn/assets/imgs/2411/8BE1A4A434D8F58A.png",
-    "about_url": "https://www.okx.com/web3",
-    "universal_url": "https://t.me/OKX_WALLET_BOT?attach=wallet",
-    "bridge": [
-      {
-        "type": "sse",
-        "url": "https://www.okx.com/tonbridge/discover/rpc/bridge"
-      }
-    ],
-    "platforms": ["ios", "android", "macos", "windows", "linux"],
-    "features": [
-      {
-        "name": "SendTransaction",
-        "maxMessages": 4,
-        "extraCurrencySupported": false
-      }
-    ]
-  },
-  {
     "app_name": "binanceWeb3TonWallet",
     "name": "Binance Wallet",
     "image": "https://public.bnbstatic.com/static/binance-w3w/ton-provider/binancew3w.png",
@@ -217,9 +196,34 @@
     ]
   },
   {
-    "app_name": "okxTonWallet",
+    "app_name": "okxWallet",
     "name": "OKX Wallet",
-    "image": "https://static.okx.com/cdn/assets/imgs/247/58E63FEA47A2B7D7.png",
+    "image": "https://static.okx.com/cdn/web3/assets/imgs/70d223c0-8527-40c1-8292-b3cc10b53d88.png",
+    "about_url": "https://web3.okx.com",
+    "universal_url": "https://web3.okx.com/download?appendQuery=true&deeplink=okxwallet://web3/wallet/tonconnect",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "okxTonWallet"
+      },
+      {
+        "type": "sse",
+        "url": "https://web3.okx.com/tonbridge/discover/rpc/bridge"
+      }
+    ],
+    "platforms": ["chrome", "safari", "firefox", "ios", "android"],
+    "features": [
+      {
+        "name": "SendTransaction",
+        "maxMessages": 4,
+        "extraCurrencySupported": false
+      }
+    ]
+  },
+  {
+    "app_name": "okxTonWallet",
+    "name": "OKX",
+    "image": "https://static.okx.com/cdn/web3/assets/imgs/be493af9-09fe-4e93-af0d-d6c4b040cea9.png",
     "about_url": "https://www.okx.com/web3",
     "universal_url": "https://www.okx.com/download?appendQuery=true&deeplink=okx://web3/wallet/tonconnect",
     "bridge": [
@@ -240,7 +244,7 @@
         "extraCurrencySupported": false
       }
     ]
-  },
+  },  
   {
     "app_name": "hot",
     "name": "HOT",
