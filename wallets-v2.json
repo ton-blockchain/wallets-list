@@ -748,7 +748,7 @@
     "features": [
       {
         "name": "SendTransaction",
-        "maxMessages": 255,
+        "maxMessages": 4,
         "extraCurrencySupported": false
       },
       {
