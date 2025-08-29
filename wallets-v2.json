@@ -732,5 +732,31 @@
         "extraCurrencySupported": false
       }
     ]
+  },
+  {
+    "app_name": "cactuslink",
+    "name": "Cactus Link",
+    "image": "https://downloads.mycactus.com/288_cactus_link.png",
+    "about_url": "https://www.mycactus.com/defi-connector",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "cactuslink_ton"
+      }
+    ],
+    "platforms": ["chrome"],
+    "features": [
+      {
+        "name": "SendTransaction",
+        "maxMessages": 4,
+        "extraCurrencySupported": false
+      },
+      {
+          "name": "SignData",
+          "types": [
+            "text", "binary"
+          ]
+        }
+    ]
   }
 ]
