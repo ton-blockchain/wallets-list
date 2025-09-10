@@ -573,6 +573,13 @@
         "key": "onekeyTonWallet"
       }
     ],
-    "platforms": ["chrome"]
+    "platforms": ["chrome"],
+    "features": [
+      {
+        "name": "SendTransaction",
+        "maxMessages": 4,
+        "extraCurrencySupported": false
+      }
+    ]
   }
 ]
