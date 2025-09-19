@@ -42,7 +42,7 @@ python scripts/proxy_urls.py --verbose
 
 ## Docker Integration
 
-This script is designed to work with Docker containers. The other developer can:
+This script is designed to work with Docker containers:
 
 1. Create a Dockerfile that serves static assets from `/assets/` directory
 2. Use this script to generate the proxy JSON file
