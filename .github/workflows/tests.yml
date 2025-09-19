@@ -1,0 +1,33 @@
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Run wallet validation tests
+        run: python tests/test_wallet_validation.py
+
+      - name: Run asset files tests
+        run: SKIP_PNG_SIZE_CHECK=1 python tests/test_assets.py
+
+      - name: Run proxy URL tests
+        run: python tests/test_proxy_urls.py
+
+      - name: Generate proxy URLs
+        run: python scripts/proxy_urls.py
+
+      - name: Run wallet validation tests on proxy file
+        run: WALLET_FILE=wallets-v2.proxy.json python tests/test_wallet_validation.py
