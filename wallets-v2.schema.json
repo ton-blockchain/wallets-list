@@ -1,0 +1,183 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "minItems": 1,
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "app_name": {
+        "type": "string",
+        "description": "ID of your wallet",
+        "minLength": 1
+      },
+      "name": {
+        "type": "string",
+        "description": "Name of your wallet",
+        "minLength": 1
+      },
+      "image": {
+        "type": "string",
+        "description": "URL to the icon of your wallet",
+        "pattern": "^https://.+png$"
+      },
+      "tondns": {
+        "type": "string",
+        "pattern": ".+ton$"
+      },
+      "about_url": {
+        "type": "string",
+        "description": "Info or landing page of your wallet",
+        "pattern": "^https://.+"
+      },
+      "universal_url": {
+        "type": "string",
+        "description": "Base part of your wallet universal url",
+        "pattern": "^https://.+"
+      },
+      "deepLink": {
+        "type": "string",
+        "minLength": 1
+      },
+      "bridge": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 2,
+        "items": {
+          "anyOf": [
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "js"
+                  ]
+                },
+                "key": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "type",
+                "key"
+              ]
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "sse"
+                  ]
+                },
+                "url": {
+                  "type": "string",
+                  "pattern": "^https://.+"
+                }
+              },
+              "required": [
+                "type",
+                "url"
+              ]
+            }
+          ]
+        }
+      },
+      "platforms": {
+        "type": "array",
+        "description": "List of platforms on which your wallet works",
+        "minItems": 1,
+        "uniqueItems": true,
+        "items": {
+          "type": "string",
+          "enum": [
+            "ios",
+            "android",
+            "chrome",
+            "firefox",
+            "safari",
+            "macos",
+            "windows",
+            "linux"
+          ]
+        }
+      },
+      "features": {
+        "type": "array",
+        "description": "List of supported TON Connect features and their capabilities",
+        "minItems": 1,
+        "items": {
+          "anyOf": [
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "enum": [
+                    "SendTransaction"
+                  ]
+                },
+                "maxMessages": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "extraCurrencySupported": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "name",
+                "maxMessages",
+                "extraCurrencySupported"
+              ]
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "enum": [
+                    "SignData"
+                  ]
+                },
+                "types": {
+                  "type": "array",
+                  "minItems": 1,
+                  "uniqueItems": true,
+                  "items": {
+                    "type": "string",
+                    "enum": [
+                      "text",
+                      "binary",
+                      "cell"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "name",
+                "types"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "required": [
+      "app_name",
+      "name",
+      "image",
+      "about_url",
+      "bridge",
+      "platforms",
+      "features"
+    ]
+  }
+}
