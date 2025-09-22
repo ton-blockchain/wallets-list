@@ -126,7 +126,11 @@ def test_asset_files():
     if assets_dir.exists():
         for asset_file in assets_dir.glob("*.png"):
             if asset_file.name not in expected_files:
-                check(False, f"Unused asset file: {asset_file.name}", f"REMOVE: assets/{asset_file.name} (not used by any wallet)")
+                # Skip files starting with .proxytest- as they are test assets
+                if asset_file.name.startswith(".proxytest-"):
+                    check(True, f"Test asset file (ignored): {asset_file.name}")
+                else:
+                    check(False, f"Unused asset file: {asset_file.name}", f"REMOVE: assets/{asset_file.name} (not used by any wallet)")
     
     # Show problems
     if problems:
