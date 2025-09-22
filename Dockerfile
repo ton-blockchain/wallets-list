@@ -34,7 +34,9 @@ FROM nginx:alpine
 
 ARG ASSETS_PREFIX=assets
 
-COPY --from=builder /build/nginx.conf /etc/nginx/nginx.conf
+ENV NGINX_RESOLVER=8.8.8.8
+
+COPY --from=builder /build/nginx.conf /etc/nginx/nginx.conf.template
 COPY --from=builder /build/wallets-v2.proxy.json /usr/share/nginx/html/wallets-v2.json
 COPY --from=builder /build/wallets.json /usr/share/nginx/html/wallets.json
 COPY assets/ /var/www/predownloaded_images/${ASSETS_PREFIX}/
@@ -45,4 +47,5 @@ RUN mkdir -p /var/cache/nginx/image_cache && \
 
 EXPOSE 80
 
-CMD ["nginx", "-g", "daemon off;"]
+CMD envsubst '${NGINX_RESOLVER}' < /etc/nginx/nginx.conf.template > /etc/nginx/nginx.conf && \
+    nginx -g "daemon off;"

@@ -21,8 +21,8 @@ http {
     # Send access logs to stdout
     access_log /dev/stdout main_with_cache;
 
-    resolver 192.168.65.7 valid=3s;
-    resolver_timeout 1s;
+    resolver ${NGINX_RESOLVER} valid=5m;
+    resolver_timeout 3s;
 
     proxy_cache_path /var/cache/nginx/image_cache
                      levels=1:2
