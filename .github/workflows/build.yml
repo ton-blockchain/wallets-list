@@ -92,3 +92,10 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+
+      - name: Test Docker image
+        env:
+          IMAGE: ghcr.io/${{ steps.params.outputs.repository }}:${{ steps.params.outputs.tag }}
+        run: |
+          docker pull $IMAGE
+          docker compose -f docker-compose.test.yml run --rm test

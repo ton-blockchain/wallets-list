@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  ton-wallets:
+    image: ${IMAGE:-ton-wallets-local}
+    ports:
+      - "${TEST_PORT:-8088}:80"
+    healthcheck:
+      test: ["CMD", "curl", "-q", "http://127.0.0.1/wallets-v2.json"]
+      interval: 1s
+      timeout: 3s
+      retries: 5
+      start_period: 1s
+
+  test:
+    image: python:3.11-alpine
+    depends_on:
+      ton-wallets:
+        condition: service_healthy
+    volumes:
+      - ./tests/test_nginxcontainer.py:/test_nginxcontainer.py:ro
+    working_dir: /
+    environment:
+      - BASE_URL=http://ton-wallets
+      - EXPECTED_BASE_URL=https://${SERVER_NAME:-config.ton.org}/${ASSETS_PREFIX:-assets}
+      - ASSETS_PREFIX=${ASSETS_PREFIX:-assets}
+      - TIMEOUT=${TEST_TIMEOUT:-10}
+      - VERBOSE=${TEST_VERBOSE:-false}
+    command: >
+      sh -c "
+        pip install requests &&
+        python /test_nginxcontainer.py --verbose
+      "

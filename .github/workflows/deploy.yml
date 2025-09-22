@@ -1,27 +1,15 @@
 name: Deploy build
 
 on:
-  push:
-    branches:
-      - main
-      - staging
-      - canary
-
-  workflow_dispatch:
-    inputs:
-      ref_name:
-        description: "Branch or tag"
-        required: true
-        type: string
-
-  workflow_call:
-    inputs:
-      ref_name:
-        required: true
-        type: string
+  workflow_run:
+    workflows: [ Tests ]
+    branches: main
+    types:
+      - completed
 
 jobs:
   build:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     uses: ./.github/workflows/build.yml
     secrets: inherit
     permissions:
