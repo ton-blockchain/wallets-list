@@ -1,0 +1,94 @@
+name: Build
+
+on:
+  workflow_call:
+    inputs:
+      ref_name:
+        required: true
+        type: string
+      image_file:
+        required: false
+        default: './Dockerfile'
+        type: string
+      component:
+        required: false
+        type: string
+    outputs:
+      image_repo:
+        value: ${{ jobs.build.outputs.image_repo }}
+      image_tag:
+        value: ${{ jobs.build.outputs.image_tag }}
+      image_digest:
+        value: ${{ jobs.build.outputs.image_digest }}
+      component:
+        value: ${{ jobs.build.outputs.component }}
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    permissions:
+      packages: write
+      contents: read
+
+    env:
+      REF_NAME: ${{ inputs.ref_name || github.ref_name }}
+
+    outputs:
+      image_repo: ghcr.io/${{ steps.params.outputs.repository }}
+      image_tag: ${{ steps.params.outputs.tag }}
+      image_digest: ${{ steps.build.outputs.digest }}
+      component: ${{ steps.params.outputs.component }}
+
+    steps:
+      - name: Compute params
+        uses: actions/github-script@v7
+        id: params
+        env:
+          COMPONENT: ${{ inputs.component }}
+        with:
+          script: |
+            core.setOutput('tag', process.env.REF_NAME);
+            core.setOutput('component', process.env.COMPONENT);
+            let repository = process.env.GITHUB_REPOSITORY.toLowerCase();
+            if (process.env.COMPONENT) {
+              repository += '/' + process.env.COMPONENT
+            }
+            core.setOutput('repository', repository);
+
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: recursive
+          ref: ${{ env.REF_NAME }}
+
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Extract metadata (tags, labels) for Docker
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ghcr.io/${{ steps.params.outputs.repository }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          context: 'git'
+          tags: |
+            type=sha
+            type=sha,format=long
+            type=raw,value=${{ steps.params.outputs.tag }}
+
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v6
+        id: build
+        with:
+          context: .
+          file: ${{ inputs.image_file }}
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}

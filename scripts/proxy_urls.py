@@ -2,8 +2,9 @@
 """
 Wallet Image URL Proxy Script
 
-This script processes wallet configuration files to replace external image URLs 
-with proxy URLs pointing to local assets. It's designed to work with Docker 
+This script processes wallet configuration files to replace external image URLs
+with proxy URLs pointing to local assets. It also generates an origins mapping
+file that maps filenames to their original URLs. It's designed to work with Docker
 containers and generates sanitized filenames for wallet images.
 
 Usage:
@@ -17,7 +18,7 @@ Usage:
     BASE_URL="https://your-proxy.com/assets/" python scripts/proxy_urls.py
 
     # Custom input/output files
-    python scripts/proxy_urls.py --input custom-wallets.json --output custom-proxy.json
+    python scripts/proxy_urls.py --input custom-wallets.json --output custom-proxy.json --origins custom-origins.json
 
     # Verbose output
     python scripts/proxy_urls.py --verbose
@@ -26,6 +27,7 @@ Command Line Options:
     --base-url URL     Base URL for proxy server (default: https://config.ton.org/assets/)
     --input FILE       Input JSON file (default: wallets-v2.json)
     --output FILE      Output JSON file (default: wallets-v2.proxy.json)
+    --origins FILE     Where to save mappings to original URLs JSON file (default: origins.json)
     --verbose, -v      Enable verbose output
     --help             Show help message
 
@@ -40,23 +42,25 @@ File Naming Convention:
     Examples: "telegram-wallet" → "telegram_wallet.png"
 """
 
+import argparse
 import json
 import os
-import sys
-import argparse
 import re
+import sys
 from pathlib import Path
-from typing import Dict, List, Any, Optional
+from typing import Dict, List, Any
 
 
 class WalletProxyProcessor:
     """Processes wallet configurations to replace image URLs with proxy URLs."""
-    
+
     def __init__(self, base_url: str):
         """Initialize processor with base URL."""
         self.base_url = base_url.rstrip('/')
+        self.origins_mapping = {}
     
-    def format_filename(self, app_name: str) -> str:
+    @staticmethod
+    def format_filename(app_name: str) -> str:
         """
         Format app name for use as filename.
         
@@ -77,19 +81,23 @@ class WalletProxyProcessor:
     def process_wallet(self, wallet: Dict[str, Any]) -> Dict[str, Any]:
         """
         Process a single wallet entry to replace image URL.
-        
+
         Args:
             wallet: Wallet configuration dictionary
-            
+
         Returns:
             Updated wallet configuration
         """
         processed_wallet = wallet.copy()
-        
+
         if 'app_name' in wallet and 'image' in wallet:
             filename = self.format_filename(wallet['app_name'])
-            processed_wallet['image'] = f"{self.base_url}/{filename}.png"
-        
+            filename_with_ext = f"{filename}.png"
+            processed_wallet['image'] = f"{self.base_url}/{filename_with_ext}"
+
+            # Store the mapping of filename to original URL
+            self.origins_mapping[filename_with_ext] = wallet['image']
+
         return processed_wallet
     
     def process_wallets(self, wallets: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
@@ -131,16 +139,16 @@ def load_json_file(file_path: str) -> List[Dict[str, Any]]:
         raise json.JSONDecodeError(f"Invalid JSON in {file_path}: {e.msg}", e.doc, e.pos)
 
 
-def save_json_file(data: List[Dict[str, Any]], file_path: str) -> None:
+def save_json_file(data: Any, file_path: str) -> None:
     """
     Save data to JSON file.
-    
+
     Args:
         data: Data to save
         file_path: Output file path
     """
     path = Path(file_path)
-    
+
     with path.open('w', encoding='utf-8') as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
 
@@ -174,6 +182,12 @@ Examples:
         '--output',
         default='wallets-v2.proxy.json',
         help='Output JSON file (default: wallets-v2.proxy.json)'
+    )
+
+    parser.add_argument(
+        '--origins',
+        default='origins.json',
+        help='Origins mapping JSON file (default: origins.json)'
     )
     
     parser.add_argument(
@@ -213,19 +227,27 @@ def main() -> None:
         # Save output
         if args.verbose:
             print(f"Saving processed data to: {args.output}")
-        
+
         save_json_file(processed_wallets, args.output)
-        
+
+        # Save origins mapping
+        if args.verbose:
+            print(f"Saving origins mapping to: {args.origins}")
+
+        save_json_file(processor.origins_mapping, args.origins)
+
         # Report results
         original_count = len([w for w in wallets if 'image' in w])
         processed_count = len([w for w in processed_wallets if 'image' in w])
-        
+
         if args.verbose:
             print("SUCCESS: Proxy URLs file created")
             print(f"Original URLs: {original_count}")
             print(f"Processed URLs: {processed_count}")
+            print(f"Origins mapping entries: {len(processor.origins_mapping)}")
         else:
             print(f"SUCCESS: Created {args.output} with {len(processed_wallets)} wallets")
+            print(f"SUCCESS: Created {args.origins} with {len(processor.origins_mapping)} origins")
     
     except Exception as e:
         print(f"ERROR: {e}", file=sys.stderr)
