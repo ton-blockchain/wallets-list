@@ -3,6 +3,8 @@ version: '3.8'
 services:
   ton-wallets:
     image: ${IMAGE:-ton-wallets-local}
+    environment:
+      NGINX_RESOLVER: 1.1.1.1
     ports:
       - "${TEST_PORT:-8088}:80"
     healthcheck:
