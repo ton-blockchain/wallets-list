@@ -21,6 +21,7 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    environment: Release
     steps:
       - name: Run deployment wf
         uses: the-actions-org/workflow-dispatch@v4
