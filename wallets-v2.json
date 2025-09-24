@@ -42,7 +42,7 @@
         "key": "tonkeeper"
       }
     ],
-    "platforms": ["ios", "android", "chrome", "firefox", "macos"],
+    "platforms": ["ios", "android", "chrome", "firefox", "macos", "windows", "linux"],
     "features": [
       {
         "name": "SendTransaction",
