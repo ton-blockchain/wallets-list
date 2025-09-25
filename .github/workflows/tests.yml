@@ -17,6 +17,9 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: Install Python dependencies
+        run: pip install jsonschema
+
       - name: Run wallet validation tests
         run: python tests/test_wallet_validation.py
 
@@ -31,3 +34,6 @@ jobs:
 
       - name: Run wallet validation tests on proxy file
         run: WALLET_FILE=wallets-v2.proxy.json python tests/test_wallet_validation.py
+
+      - name: Run Json Schema validate test
+        run: python tests/test_jsonschema.py --wallets-file=wallets-v2.json --json-schema-file=wallets-v2.schema.json
