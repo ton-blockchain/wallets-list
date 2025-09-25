@@ -20,7 +20,6 @@ import os
 import requests
 import sys
 import time
-from pathlib import Path
 from typing import Dict, List, Any, Tuple
 
 
@@ -163,27 +162,18 @@ class ImageTester:
 
             # Debug headers if verbose
             if self.verbose:
-                debug_headers = ['content-type', 'x-cache-status', 'x-served-from', 'x-remote-url', 'x-upstream-status']
+                debug_headers = ['content-type', 'cache-control', 'content-length']
                 for header in debug_headers:
                     value = response.headers.get(header, 'N/A')
                     self.log(f"  {header}: {value}")
 
-            # Check Content-Type header
             content_type = response.headers.get('content-type', '').lower()
             if 'image/png' not in content_type:
-                if 'application/octet-stream' in content_type:
-                    self.log(f"WARN {url} returned application/octet-stream")
-                else:
-                    # Additional debug info for failed content type
-                    cache_status = response.headers.get('x-cache-status', 'N/A')
-                    served_from = response.headers.get('x-served-from', 'N/A')
-                    return False, f"Invalid content-type: {content_type}, cache-status: {cache_status}, served-from: {served_from}"
+                return False, f"Invalid content-type: {content_type}"
 
-            # Check PNG signature
             if not self.is_valid_png(response.content):
                 return False, "Response content is not a valid PNG image"
 
-            # Check content length
             if len(response.content) == 0:
                 return False, "Empty response content"
 
@@ -214,6 +204,7 @@ class ImageTester:
         failed_items = []
 
         # Test 1: Fetch wallets-v2.json
+        wallets_v2 = None
         try:
             wallets_v2 = self.fetch_wallets_json()
             print(f"✓ Successfully fetched wallets-v2.json ({len(wallets_v2)} wallets)")
@@ -233,8 +224,7 @@ class ImageTester:
             failed_items.append(f"{self.base_url}/wallets.json")
         total_tests += 1
 
-        # If wallets-v2.json failed, we can't continue with image tests
-        if 'wallets_v2' not in locals():
+        if wallets_v2 is None:
             return passed_tests, total_tests, failed_items
 
         # Test 3: Extract and validate image URLs from wallets-v2.json
@@ -274,26 +264,6 @@ class ImageTester:
             if i < len(test_urls):
                 time.sleep(0.1)
 
-        # Test 5: Test special proxy test images
-        print()
-        test_images = [".proxytest-404.png", ".proxytest-dns.png"]
-        for i, test_image in enumerate(test_images, 1):
-            test_url = f"{self.base_url}/{self.assets_prefix}/{test_image}"
-            print(f"[{i}/{len(test_images)}] Testing special image: {test_url}")
-
-            success, error = self.test_image_url(test_url)
-            if success:
-                print(f"  ✓ Valid PNG")
-                passed_tests += 1
-            else:
-                print(f"  ✗ Failed: {error}")
-                failed_items.append(test_url)
-
-            total_tests += 1
-
-            # Small delay to avoid overwhelming the server
-            if i < len(test_images):
-                time.sleep(0.1)
 
         return passed_tests, total_tests, failed_items
 
