@@ -217,6 +217,25 @@
     ]
   },
   {
+  "app_name": "OpenBlock",
+  "name": "OpenBlock Wallet",
+  "image": "https://obstatic.243096.com/download/dapp/sdk/images/logo.png",
+  "about_url": "https://openblock.com/#/download",
+  "universal_url": "https://openblock.com/#/download",
+  "deepLink": "openblocktonsign://",
+  "bridge": [
+    {
+      "type": "js",
+      "key": "obtonwallet"
+    },
+    {
+        "type": "sse",
+        "url": "https://bridge.tonapi.io/bridge"
+    }
+  ],
+  "platforms": ["ios", "android", "chrome", "firefox"]
+  },
+  {
     "app_name": "okxTonWallet",
     "name": "OKX Wallet",
     "image": "https://static.okx.com/cdn/assets/imgs/247/58E63FEA47A2B7D7.png",
