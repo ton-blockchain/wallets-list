@@ -781,5 +781,19 @@
         "extraCurrencySupported": false
       }
     ]
+  },
+  {
+    "app_name": "atomicwallet",
+    "name": "Atomic Wallet",
+    "image": "hhttps://atomicwallet.io/images/press-kit/atomic_wallet_logo_dark_rounded.png",
+    "about_url": "https://atomicwallet.io/",
+    "universal_url": "https://atomicwallet.io/downloads",
+    "bridge": [
+      {
+        "type": "js",
+        "key": "atomicwallet"
+      }
+    ],
+    "platforms": ["chrome", "safari", "firefox", "ios", "android"]
   }
 ]
