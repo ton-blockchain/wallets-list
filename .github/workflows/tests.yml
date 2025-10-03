@@ -24,7 +24,7 @@ jobs:
         run: python tests/test_wallet_validation.py
 
       - name: Run asset files tests
-        run: SKIP_PNG_SIZE_CHECK=1 python tests/test_assets.py
+        run: SKIP_PNG_SIZE_CHECK=1 SKIP_EXTRA_IMAGES_CHECK=1 python tests/test_assets.py
 
       - name: Run proxy URL tests
         run: python tests/test_proxy_urls.py

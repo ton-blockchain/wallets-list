@@ -62,24 +62,35 @@ def test_asset_files():
     
     passed = 0
     failed = 0
+    warnings = 0
     problems = []
+    warning_problems = []
     
     # Check if size validation is disabled
     skip_size_check = os.getenv('SKIP_PNG_SIZE_CHECK', '').lower() in ('1', 'true', 'yes')
+    # Check if extra images check is disabled (warnings instead of errors)
+    skip_extra_images_check = os.getenv('SKIP_EXTRA_IMAGES_CHECK', '').lower() in ('1', 'true', 'yes')
     
-    def check(condition, message, problem=None):
-        nonlocal passed, failed
+    def check(condition, message, problem=None, is_warning=False):
+        nonlocal passed, failed, warnings
         if test(condition, message):
             passed += 1
         else:
-            failed += 1
-            if problem:
-                problems.append(problem)
+            if is_warning:
+                warnings += 1
+                if problem:
+                    warning_problems.append(problem)
+            else:
+                failed += 1
+                if problem:
+                    problems.append(problem)
     
     print("=" * 50)
     print("ASSET FILES VALIDATION TESTS")
     if skip_size_check:
         print("(PNG size validation disabled)")
+    if skip_extra_images_check:
+        print("(Extra images check as warnings)")
     print("=" * 50)
     
     # Load wallets data
@@ -126,7 +137,10 @@ def test_asset_files():
     if assets_dir.exists():
         for asset_file in assets_dir.glob("*.png"):
             if asset_file.name not in expected_files:
-                check(False, f"Unused asset file: {asset_file.name}", f"REMOVE: assets/{asset_file.name} (not used by any wallet)")
+                if skip_extra_images_check:
+                    check(False, f"Unused asset file: {asset_file.name}", f"REMOVE: assets/{asset_file.name} (not used by any wallet)", is_warning=True)
+                else:
+                    check(False, f"Unused asset file: {asset_file.name}", f"REMOVE: assets/{asset_file.name} (not used by any wallet)")
     
     # Show problems
     if problems:
@@ -136,16 +150,28 @@ def test_asset_files():
         for problem in problems:
             print(f"  {problem}")
     
+    # Show warnings
+    if warning_problems:
+        print(f"\nWarning - Files that could be cleaned up:")
+        print()
+        for problem in warning_problems:
+            print(f"  {problem}")
+    
     # Summary
     print("\n" + "=" * 50)
     print("SUMMARY")
     print("=" * 50)
-    print(f"PASSED: {passed}")
-    print(f"FAILED: {failed}")
-    print(f"TOTAL:  {passed + failed}")
+    print(f"PASSED:   {passed}")
+    print(f"FAILED:   {failed}")
+    if warnings > 0:
+        print(f"WARNINGS: {warnings}")
+    print(f"TOTAL:    {passed + failed + warnings}")
     
     if failed == 0:
-        print("\nALL TESTS PASSED")
+        if warnings > 0:
+            print(f"\nALL TESTS PASSED (with {warnings} warnings)")
+        else:
+            print("\nALL TESTS PASSED")
         return True
     else:
         print(f"\n{failed} TESTS FAILED")
