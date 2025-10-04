@@ -781,5 +781,23 @@
         "extraCurrencySupported": false
       }
     ]
+  },
+  {
+    "app_name": "Fearless",
+    "name": "Fearless",
+    "image": "https://raw.githubusercontent.com/soramitsu/shared-features-utils/master/icons/FW_icon_288.png",
+    "about_url": "https://fearlesswallet.io",
+    "universal_url": "https://fearlesswallet.io/ton-connect",
+    "bridge": [
+       {
+          "type": "sse",
+          "url": "https://fearless-ton-bridge.odachi.soramitsu.co.jp/bridge"
+       },
+       {
+          "type": "js",
+          "key": "Fearless"
+       }
+    ],
+    "platforms": ["ios", "android"]
   }
 ]
